@@ -27,3 +27,12 @@ print(myStr.replace('world','wolld'))
 print(myStr)
 #切割
 print(myStr.split(" "))
+#第一个大写
+print(myStr.capitalize())
+#所有第一个大写
+print(myStr.title())
+#判断以什么开头，以什么结尾 返回true startwidth endwidth
+file_name = 'xx.txt'
+print(file_name.endswith(".txt"))
+#lower 转换字符中所有大写字符为小写 upper
+print(myStr.lower())
