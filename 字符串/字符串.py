@@ -36,3 +36,5 @@ file_name = 'xx.txt'
 print(file_name.endswith(".txt"))
 #lower 转换字符中所有大写字符为小写 upper
 print(myStr.lower())
+#find
+print(myStr.find('itcast'))
