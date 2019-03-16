@@ -38,3 +38,9 @@ print(file_name.endswith(".txt"))
 print(myStr.lower())
 #find
 print(myStr.find('itcast'))
+#conut
+print(myStr.count('itcast'))
+#replace
+name = 'hell0 world ha ha'
+print(name.replace('ha','Ha'))
+print(myStr.partition('itcast'))
