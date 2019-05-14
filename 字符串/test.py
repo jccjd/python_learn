@@ -14,5 +14,6 @@ b = a[:]
 print(b)
 print(b is a)
 print(b == a)
-
+if 1 or 0 and 0:
+    print("yes")
 
