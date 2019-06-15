@@ -46,7 +46,7 @@ with tf.Session() as sess:
         if i % 500 == 0:
             total_loss = sess.run(loss, feed_dict={x: X, y_:Y})
             print("After %d tanining step(s), loss on all data %g" % (i,total_loss))
-
+ 
     print("\n")
     print("W1:\n",sess.run(w1))
     print("W2:\n",sess.run(w2))
