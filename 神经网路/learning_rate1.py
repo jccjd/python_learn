@@ -11,7 +11,7 @@ global_step = tf.Variable(0,trainable=False)
 #定义指数下降学习率
 learning_rate = tf.train.exponential_decay(LEARNING_RATE_BASE,global_step,LEARNING_RATE_STEP,LEARNING_RATE_DECAY
                                            ,staircase=True)
-#定义待优化参数，初值给10
+#定义待优化参数，初值给10 
 w = tf.Variable(tf.constant(5,dtype=tf.float32))
 #定义损失函数loss
 loss = tf.square(w + 1)
