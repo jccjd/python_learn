@@ -20,10 +20,11 @@ with tf.Session() as sess:
     #用ema.avarage(w1)获取w1滑动平均值（要运行多个节点，作为列表中的元素列出，写在sess.run()中
     #打印出当前参数w1和w1的滑动平均
     print(sess.run([w1,ema.average(w1)]))
+
     #参数w1赋值为1
     sess.run(tf.assign(w1,1))
     sess.run(ema_op)
-    print([w1,ema.average(w1)])
+    print(sess.run([w1,ema.average(w1)]))
 
     #更新step和w1的值，模拟出100轮后，参数w1变化为10
     sess.run(tf.assign(global_step,100))
