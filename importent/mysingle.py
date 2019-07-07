@@ -35,7 +35,8 @@ class Singleton(type):
     def __call__(cls, *args, **kw):
         if cls._instance is None:
             cls._instance = super(Singleton, cls).__call__(*args, **kw)
-        return cls._instance
+        re
+        turn cls._instance
 
 class MyClass3(metaclass = Singleton):
     def foo(self):
