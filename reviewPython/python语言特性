@@ -1,0 +1,9 @@
+#### python的函数参数传递
+##### python的标准数据类型
+    numbers(int long float complex)
+    string
+    List
+    Tuple
+    Dictionary
+    
+python的所有变量都可以理解是内存中一个对象的“引用”,类型是属于对象的，而不是变量。对象有两种，“可更改与不可更改。在python中，string,tuples,和numbers是不可更改的对象，而list，dict，set等则是可以修改的对象。
