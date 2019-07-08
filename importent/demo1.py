@@ -1,1 +1,0 @@
-from mysingle import sinleton
