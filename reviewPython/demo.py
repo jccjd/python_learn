@@ -17,6 +17,11 @@ class Singleton(type):
         if cls._instance is None:
             cls._instance = super(Singleton,cls).__call__(*args, **kwargs)
         return cls._instance
+class Singleton(object):
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls,'_instance'):
+            cls._instance = super(Singleton,cls).__new__(cls,*args,**kwargs)
+        return cls._instance
 
 
 class MyClass3(metaclass = Singleton):
@@ -35,6 +40,7 @@ class A(object):
     @staticmethod
     def static_foo(x):
         print("executing static_foo(%s)"%x)
+
 if __name__ == '__main__':
 
     one = MyClass3()
