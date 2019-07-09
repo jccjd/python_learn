@@ -16,19 +16,7 @@ class Singleton1(object):
 
 class myClass( metaclass = Singleton):
     def foo(self):
-        print("je")
-
+        pass
 class myClass1(Singleton1):
     def foo(self):
         pass
-if __name__ == '__main__':
-    a = myClass1()
-    a.foo()
-    print(id(a))
-    ab= myClass1()
-    print(id(ab))
-    a = myClass()
-    a.foo()
-    print(id(a))
-    ab= myClass()
-    print(id(ab))
