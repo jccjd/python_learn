@@ -20,3 +20,15 @@ class myClass( metaclass = Singleton):
 class myClass1(Singleton1):
     def foo(self):
         pass
+class A(object):
+    def foo1(self):
+        print('hello',self)
+    @staticmethod
+    def foo2():
+        print()
+    def foo3(cls):
+        print(cls)
+a = A()
+a.foo1()
+a.foo2()
+a.foo3()

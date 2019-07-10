@@ -166,6 +166,17 @@ is是对比地址 ==是对比值
 当使用range时会生成一个list开辟一大块空间，而xrange则会生成一个可迭代的对象
 
 Python3中没有xrange，range和Python2中的xrange相同
+#### cls 和self
+
+(在p2中)self 表示一个具体的实例本身.
+
+cls表示这个类本身
+類先調用__new__方法返回該類的實例對象這個實例對象就是__init__方法的第一個參數self
+
+即self是__new__的返回值
+
+p3中沒有區別
+    
 
 
 
