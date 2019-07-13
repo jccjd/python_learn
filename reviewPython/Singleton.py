@@ -31,4 +31,5 @@ class A(object):
 a = A()
 a.foo1()
 a.foo2()
+
 a.foo3()
