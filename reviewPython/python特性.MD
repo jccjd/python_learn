@@ -24,6 +24,11 @@ python的所有变量都可以理解是内存中一个对象的“引用”,类�
     print list[2:]           # 输出从第三个开始至列表末尾的所有元素
     print tinylist * 2       # 输出列表两次
     print list + tinylist    # 打印组合的列表
+#### 集合去重
+
+    list: list(set(mylist))
+    dic: 
+
 #### python元类（metaclass)
 用于orm的单例模式，对数据库对象实现保护，确保全局只有一个数据库对象
 metaclass，直译为元类，简单的解释就是：
@@ -36,18 +41,22 @@ metaclass，直译为元类，简单的解释就是：
 #### @staticmethod，和@classmethod
 python有三种方法即静态方法(staticmethod)，类方法(classmethod)和实例方法
     
-    def foo(x):
-    print("executing foo(%s)"%(1))
-    class A(object):
-        def foo(self,x):
-            print("executing foo(%s,%s)"%(self,x))
-        @classmethod
-        def class_foo(cls,x):
-            print("executing class_foo(%s,%s)"%(cls,x))
-        @staticmethod
-        def static_foo(x):
-            print("executing static_foo(%s)"%x)
-         
+        #函数调用问题，普通方法不能直接类名调用
+        #静态方法和类方法可以直接类名访问
+        class A(object):
+            def foo(self):
+                print("executing foo()")
+            @classmethod
+            def class_foo(cls,x):
+                print("executing class_foo(%s,%s)"%(cls,x))
+            @staticmethod
+            def static_foo(x):
+                print("executing static_foo(%s)"%x)
+        
+        a = A()
+        # A.foo()#不能使用
+        A.class_foo(2)
+        A.static_foo(1)         
 #### 类变量和实例变量
 ##### 类变量：
     是可以在类的所有实例之间共享的值（也就是说，它们不是单独分配给每个实例的）
