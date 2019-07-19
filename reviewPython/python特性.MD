@@ -36,15 +36,16 @@ metaclass，直译为元类，简单的解释就是：
 当我们定义了类以后，就可以根据这个类创建出实例，所以：先定义类，然后创建实例。
 但是如果我们想创建出类呢？那就必须根据metaclass创建出类，所以：先定义metaclass，然后创建类。
 
-连接起来就是：先定义metaclass，就可以创建6类，最后创建实例。
+连接起来就是：先定义metaclass，就可以创建类，最后创建实例。
 所以，metaclass允许你创建类或者修改类。换句话说，你可以把类看成是metaclass创建出来的“实例”。
+
 #### @staticmethod，和@classmethod
 python有三种方法即静态方法(staticmethod)，类方法(classmethod)和实例方法
     
         #函数调用问题，普通方法不能直接类名调用
         #静态方法和类方法可以直接类名访问
         class A(object):
-            def foo(self):
+            def foo(mcs):
                 print("executing foo()")
             @classmethod
             def class_foo(cls,x):
@@ -177,7 +178,7 @@ is是对比地址 ==是对比值
 Python3中没有xrange，range和Python2中的xrange相同
 #### cls 和self
 
-(在p2中)self 表示一个具体的实例本身.
+(在p2中)mcs 表示一个具体的实例本身.
 
 cls表示这个类本身
 類先調用__new__方法返回該類的實例對象這個實例對象就是__init__方法的第一個參數self

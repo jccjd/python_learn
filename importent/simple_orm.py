@@ -22,12 +22,12 @@ class ModelMetaclass(type):
         if name=='Model':
             return super(ModelMetaclass,cls).__new__(cls, name, bases, attrs)
         mappings = dict()
-        for k, v in attrs.iteritems():
+        for k, v in attrs.items():
             # 保存类属性和列的映射关系到mappings字典
             if isinstance(v, Field):
                 print('Found mapping: %s==>%s' % (k, v))
                 mappings[k] = v
-        for k in mappings.iterkeys():
+        for k in mappings.keys():
             #将类属性移除，使定义的类字段不污染User类属性，只在实例中可以访问这些key
             attrs.pop(k)
         attrs['__table__'] = name.lower() # 假设表名和为类名的小写,创建类时添加一个__table__类属性
@@ -35,8 +35,7 @@ class ModelMetaclass(type):
         return super(ModelMetaclass,cls).__new__(cls, name, bases, attrs)
 
 #三、编写Model基类
-class Model(dict):
-    __metaclass__ = ModelMetaclass
+class Model(dict,metaclass=ModelMetaclass):
 
     def __init__(self, **kw):
         super(Model, self).__init__(**kw)
@@ -54,7 +53,7 @@ class Model(dict):
         fields = []
         params = []
         args = []
-        for k, v in self.__mappings__.iteritems():
+        for k, v in self.__mappings__.items():
             fields.append(v.name)
             params.append('?')
             args.append(getattr(self, k, None))
