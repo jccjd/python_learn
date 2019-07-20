@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/reviewPython/理解元类.MD" line="62" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="55d56913-9bc2-4b90-b3f1-b3fcf9c5d3c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/reviewPython/理解元类.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/day1/hello/work1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/day1/hello/变量.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importent/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/importent/orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importent/simple_orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/importent/simple_orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/democopy.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/democopy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importent/mysingle.py" beforeDir="false" afterPath="$PROJECT_DIR$/importent/mysingle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reviewPython/demometaclss.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/demometaclss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/python推导式.MD" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/python推导式.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/python特性.MD" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/python特性.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/迭代器和生成器.MD" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/迭代器和生成器.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviewPython/理解元类.MD" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/理解元类.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,59 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reviewPython/理解元类.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="-546">
-                <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reviewPython/demometaclss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/importent/orm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reviewPython/democopy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/基础/day1/hello/work1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+            <state relative-caret-position="415">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -123,7 +69,6 @@
         <option value="$PROJECT_DIR$/单例模式/demo1.py" />
         <option value="$PROJECT_DIR$/单例模式/mysingle.py" />
         <option value="$PROJECT_DIR$/单例模式/orm.py" />
-        <option value="$PROJECT_DIR$/importent/mysingle.py" />
         <option value="$PROJECT_DIR$/reviewPython/test.py" />
         <option value="$PROJECT_DIR$/reviewPython/python.py" />
         <option value="$PROJECT_DIR$/reviewPython/copy.py" />
@@ -141,20 +86,21 @@
         <option value="$PROJECT_DIR$/基础/day1/hello/变量.py" />
         <option value="$PROJECT_DIR$/reviewPython/python特性.MD" />
         <option value="$PROJECT_DIR$/reviewPython/demo.py" />
-        <option value="$PROJECT_DIR$/reviewPython/理解元类.MD" />
         <option value="$PROJECT_DIR$/reviewPython/democopy.py" />
         <option value="$PROJECT_DIR$/importent/simple_orm.py" />
         <option value="$PROJECT_DIR$/基础/day1/hello/work1.py" />
-        <option value="$PROJECT_DIR$/reviewPython/demometaclss.py" />
         <option value="$PROJECT_DIR$/importent/orm.py" />
+        <option value="$PROJECT_DIR$/importent/mysingle.py" />
+        <option value="$PROJECT_DIR$/reviewPython/demometaclss.py" />
+        <option value="$PROJECT_DIR$/reviewPython/理解元类.MD" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="298" />
-    <option name="y" value="48" />
-    <option name="width" value="878" />
-    <option name="height" value="551" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -299,6 +245,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mysingle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/importent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/importent/mysingle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="orm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,41 +308,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="work1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_learn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基础/day1/hello" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基础/day1/hello/work1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.demometaclss" />
       <item itemvalue="Python.orm" />
       <item itemvalue="Python.simple_orm" />
-      <item itemvalue="Python.work1" />
       <item itemvalue="Python.codecs" />
+      <item itemvalue="Python.mysingle" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.demometaclss" />
-        <item itemvalue="Python.simple_orm" />
+        <item itemvalue="Python.mysingle" />
         <item itemvalue="Python.orm" />
+        <item itemvalue="Python.simple_orm" />
         <item itemvalue="Python.codecs" />
-        <item itemvalue="Python.work1" />
       </list>
     </recent_temporary>
   </component>
@@ -604,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563430132993</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="reviewpython">
+      <created>1563535719419</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1563535719419</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -617,16 +570,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.313783" visible="true" weight="0.14641288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.313783" visible="true" weight="0.15625" />
       <window_info auto_hide="true" id="Structure" order="1" sideWeight="0.686217" side_tool="true" type="SLIDING" weight="0.3058455" />
       <window_info x="583" y="150" width="200" height="467" id="Favorites" order="2" sideWeight="0.686217" side_tool="true" type="SLIDING" weight="0.14641288" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997987" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992658" weight="0.3240469" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36656892" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.3279678" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33802816" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
@@ -639,26 +592,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15812592" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.38778627" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.9541985" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007342" side_tool="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32977098" />
-      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32982844" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -703,29 +636,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/importent/orm.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/基础/day1/hello/work1.py</url>
           <line>6</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/importent/orm.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="39" />
+          <url>file://$PROJECT_DIR$/importent/mysingle.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/reviewPython/demometaclss.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/importent/mysingle.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/importent/simple_orm.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="41" />
+          <url>file://$PROJECT_DIR$/importent/mysingle.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -741,6 +669,9 @@
         <watch expression="uppercase_attrs" />
         <watch expression="attrs" />
         <watch expression="chiose" />
+        <watch expression="mappings" />
+        <watch expression="mappings" />
+        <watch expression="dct" />
       </configuration>
     </watches-manager>
   </component>
@@ -776,7 +707,6 @@
     <entry file="file://$PROJECT_DIR$/神经网路/cost1.py" />
     <entry file="file://$PROJECT_DIR$/importent/demo1.py" />
     <entry file="file://$PROJECT_DIR$/reviewpython.patch" />
-    <entry file="file://$PROJECT_DIR$/importent/mysingle.py" />
     <entry file="file://$PROJECT_DIR$/reviewPython/python.py" />
     <entry file="file://D:/Python37/Lib/copy.py" />
     <entry file="file://$PROJECT_DIR$/reviewPython/python语言特性" />
@@ -890,23 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/理解元类.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-546">
-            <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="313" column="33" lean-forward="true" selection-start-line="313" selection-start-column="33" selection-end-line="313" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reviewPython/迭代器和生成器.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -924,31 +837,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/demometaclss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reviewPython/demoClosure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -961,8 +867,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/importent/orm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="26">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/importent/mysingle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviewPython/理解元类.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="260">
+            <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviewPython/demometaclss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
         </state>
       </provider>
     </entry>
