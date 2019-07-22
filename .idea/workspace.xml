@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/reviewPython/理解元类.MD" line="62" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="55d56913-9bc2-4b90-b3f1-b3fcf9c5d3c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/reviewPython/basedemo/day1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewPython/basedemo/day1/demo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewPython/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importent/mysingle.py" beforeDir="false" afterPath="$PROJECT_DIR$/importent/mysingle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/demometaclss.py" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/demometaclss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reviewPython/理解元类.MD" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/理解元类.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reviewPython/python特性" beforeDir="false" afterPath="$PROJECT_DIR$/reviewPython/python特性" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,23 +14,85 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="python_learn" />
-  </component>
   <component name="FileColors">
-    <fileColor scope="Tests" color="0f2a00" />
-    <fileColor scope="Local Unit Tests" color="0f2a00" />
-    <fileColor scope="Android Instrumented Tests" color="0f2a00" />
+    <fileColor scope="Tests" color="bbff7e" />
+    <fileColor scope="Local Unit Tests" color="bbff7e" />
+    <fileColor scope="Android Instrumented Tests" color="bbff7e" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/Singleton.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/python特性">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="170" column="13" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/democopy.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reviewPython/demometaclss.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+            <state relative-caret-position="234">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/basedemo/day1/demo1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/test">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviewPython/quick.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -69,38 +129,28 @@
         <option value="$PROJECT_DIR$/单例模式/demo1.py" />
         <option value="$PROJECT_DIR$/单例模式/mysingle.py" />
         <option value="$PROJECT_DIR$/单例模式/orm.py" />
-        <option value="$PROJECT_DIR$/reviewPython/test.py" />
-        <option value="$PROJECT_DIR$/reviewPython/python.py" />
-        <option value="$PROJECT_DIR$/reviewPython/copy.py" />
-        <option value="$PROJECT_DIR$/reviewPython/python语言特性" />
-        <option value="$PROJECT_DIR$/reviewPython/iterableDemo.py" />
-        <option value="$PROJECT_DIR$/reviewPython/迭代器和生成器" />
-        <option value="$PROJECT_DIR$/reviewPython/closePackge.py" />
-        <option value="$PROJECT_DIR$/reviewPython/闭包" />
-        <option value="$PROJECT_DIR$/reviewPython/demoClosure.py" />
-        <option value="$PROJECT_DIR$/reviewPython/quick.py" />
-        <option value="$PROJECT_DIR$/reviewPython/python特性" />
-        <option value="$PROJECT_DIR$/reviewPython/Singleton.py" />
-        <option value="$PROJECT_DIR$/reviewPython/常用算法/fibnq.py" />
-        <option value="$PROJECT_DIR$/reviewPython/python推导式.MD" />
-        <option value="$PROJECT_DIR$/基础/day1/hello/变量.py" />
-        <option value="$PROJECT_DIR$/reviewPython/python特性.MD" />
-        <option value="$PROJECT_DIR$/reviewPython/demo.py" />
-        <option value="$PROJECT_DIR$/reviewPython/democopy.py" />
-        <option value="$PROJECT_DIR$/importent/simple_orm.py" />
-        <option value="$PROJECT_DIR$/基础/day1/hello/work1.py" />
         <option value="$PROJECT_DIR$/importent/orm.py" />
         <option value="$PROJECT_DIR$/importent/mysingle.py" />
+        <option value="$PROJECT_DIR$/reviewPython/test.py" />
+        <option value="$PROJECT_DIR$/importent/simple_orm.py" />
+        <option value="$PROJECT_DIR$/reviewPython/python.py" />
+        <option value="$PROJECT_DIR$/reviewPython/copy.py" />
+        <option value="$PROJECT_DIR$/reviewPython/democopy.py" />
+        <option value="$PROJECT_DIR$/reviewPython/demo.py" />
         <option value="$PROJECT_DIR$/reviewPython/demometaclss.py" />
-        <option value="$PROJECT_DIR$/reviewPython/理解元类.MD" />
+        <option value="$PROJECT_DIR$/reviewPython/python语言特性" />
+        <option value="$PROJECT_DIR$/reviewPython/Singleton.py" />
+        <option value="$PROJECT_DIR$/reviewPython/python特性" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/reviewPython/basedemo/day1/demo1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="960" />
+    <option name="y" value="27" />
+    <option name="width" value="960" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -122,67 +172,20 @@
               <item name="python_learn" type="462c0819:PsiDirectoryNode" />
               <item name="importent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="reviewPython" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="包，模块，函数" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="基础" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="基础" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="基础" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="reviewPython" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowStructure.ShowToolbar" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\python_learn\reviewPython\排序算法" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\code\python_learn\importent" />
       <recent name="D:\code\python_learn\单例模式" />
@@ -202,8 +205,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demometaclss">
-    <configuration name="codecs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.demo1">
+    <configuration name="Singleton" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -211,11 +214,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="D:/Python37/Lib" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reviewPython" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/Python37/Lib/codecs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reviewPython/Singleton.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reviewPython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reviewPython/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/reviewPython/basedemo/day1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reviewPython/basedemo/day1/demo1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,48 +290,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mysingle" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_learn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/importent" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/importent/mysingle.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="orm" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_learn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/importent" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/importent/orm.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="simple_orm" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -308,26 +311,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.demometaclss" />
-      <item itemvalue="Python.orm" />
-      <item itemvalue="Python.simple_orm" />
-      <item itemvalue="Python.codecs" />
-      <item itemvalue="Python.mysingle" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demometaclss" />
-        <item itemvalue="Python.mysingle" />
-        <item itemvalue="Python.orm" />
+        <item itemvalue="Python.demo1" />
+        <item itemvalue="Python.Singleton" />
         <item itemvalue="Python.simple_orm" />
-        <item itemvalue="Python.codecs" />
+        <item itemvalue="Python.demometaclss" />
+        <item itemvalue="Python.demo" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_MODE" value="false" />
-    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -495,129 +487,38 @@
       <updated>1562767002788</updated>
     </task>
     <task id="LOCAL-00023" summary="reviewpython">
-      <created>1563283288844</created>
+      <created>1562902607851</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1563283288844</updated>
+      <updated>1562902607851</updated>
     </task>
-    <task id="LOCAL-00024" summary="reviewpython">
-      <created>1563325987441</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1563325987441</updated>
-    </task>
-    <task id="LOCAL-00025" summary="reviewpython">
-      <created>1563326009436</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1563326009436</updated>
-    </task>
-    <task id="LOCAL-00026" summary="reviewpython">
-      <created>1563345942465</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1563345942465</updated>
-    </task>
-    <task id="LOCAL-00027" summary="reviewpython">
-      <created>1563355748262</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1563355748262</updated>
-    </task>
-    <task id="LOCAL-00028" summary="reviewpython">
-      <created>1563416020427</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1563416020427</updated>
-    </task>
-    <task id="LOCAL-00029" summary="reviewpython">
-      <created>1563418399641</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1563418399641</updated>
-    </task>
-    <task id="LOCAL-00030" summary="reviewpython">
-      <created>1563430132993</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1563430132993</updated>
-    </task>
-    <task id="LOCAL-00031" summary="reviewpython">
-      <created>1563535719419</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1563535719419</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.313783" visible="true" weight="0.15625" />
-      <window_info auto_hide="true" id="Structure" order="1" sideWeight="0.686217" side_tool="true" type="SLIDING" weight="0.3058455" />
-      <window_info x="583" y="150" width="200" height="467" id="Favorites" order="2" sideWeight="0.686217" side_tool="true" type="SLIDING" weight="0.14641288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20104167" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32997987" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.3279678" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33802816" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992658" weight="0.38636363" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.9541985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991204" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32991204" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007342" side_tool="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32844576" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32977098" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32982844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_PATCH_IN_EXPLORER" value="true" />
@@ -632,59 +533,10 @@
     <MESSAGE value="reviewpython" />
     <option name="LAST_COMMIT_MESSAGE" value="reviewpython" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/基础/day1/hello/work1.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/importent/mysingle.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/importent/mysingle.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/importent/mysingle.py</url>
-          <line>44</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="uppercase_attrs" />
-        <watch expression="attrs" />
-        <watch expression="chiose" />
-        <watch expression="mappings" />
-        <watch expression="mappings" />
-        <watch expression="dct" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>mappings</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/包，模块/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/包，模块，函数/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/mvc_hello/sort.py" />
     <entry file="file://$PROJECT_DIR$/mvc_hello/application.py" />
     <entry file="file://$PROJECT_DIR$/mvc_hello/config.py" />
     <entry file="file://$PROJECT_DIR$/mvc_hello/server.py" />
@@ -696,6 +548,8 @@
     <entry file="file://D:/Python37/Lib/site-packages/tensorflow/python/client/session.py" />
     <entry file="file://$PROJECT_DIR$/神经网路/learning_rate.py" />
     <entry file="file://$PROJECT_DIR$/神经网路/learning_rate1.py" />
+    <entry file="file://$PROJECT_DIR$/包，模块，函数/demo1.py" />
+    <entry file="file://D:/Python37/Lib/codecs.py" />
     <entry file="file://$PROJECT_DIR$/神经网路/move_average_decay.py" />
     <entry file="file://$PROJECT_DIR$/importent/__init__.py" />
     <entry file="file://$PROJECT_DIR$/字符串/test.py" />
@@ -707,199 +561,68 @@
     <entry file="file://$PROJECT_DIR$/神经网路/cost1.py" />
     <entry file="file://$PROJECT_DIR$/importent/demo1.py" />
     <entry file="file://$PROJECT_DIR$/reviewpython.patch" />
+    <entry file="file://$PROJECT_DIR$/importent/mysingle.py" />
     <entry file="file://$PROJECT_DIR$/reviewPython/python.py" />
     <entry file="file://D:/Python37/Lib/copy.py" />
     <entry file="file://$PROJECT_DIR$/reviewPython/python语言特性" />
+    <entry file="file://$PROJECT_DIR$/importent/orm.py" />
     <entry file="file://$PROJECT_DIR$/mysite/manage.py" />
-    <entry file="file://$PROJECT_DIR$/mysite/polls/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/包，模块，函数/demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/closePackge.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/iterableDemo.py">
+    <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+        <state>
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviewPython/Singleton.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/闭包.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="26">
-            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/常用算法/quick.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state>
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/常用算法/fibnq.py">
+    <entry file="file://$PROJECT_DIR$/reviewPython/python特性">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/python推导式.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="339">
-            <caret line="69" selection-start-line="69" selection-end-line="69" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/python特性.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="260">
-            <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1201333238/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="2912" column="8" selection-start-line="2912" selection-start-column="8" selection-end-line="2912" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        <state>
+          <caret line="170" column="13" selection-start-line="170" selection-start-column="13" selection-end-line="170" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviewPython/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/迭代器和生成器.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="180">
-            <caret line="77" column="15" lean-forward="true" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/变量.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/demoClosure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python37/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state>
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviewPython/democopy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/importent/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/importent/mysingle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/理解元类.MD">
+    <entry file="file://$PROJECT_DIR$/reviewPython/test">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="260">
-            <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          </first_editor>
+          <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviewPython/quick.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviewPython/basedemo/day1/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reviewPython/demometaclss.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        <state relative-caret-position="234">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

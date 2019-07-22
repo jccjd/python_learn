@@ -22,7 +22,6 @@ class UpperAttrMetaClass(type):
         return super(UpperAttrMetaClass, mcs).__new__(mcs, name, bases, uppercase_attrs)
 
 
-
 class MetaClassModel(type):
     def __new__(mcs, name, base, dct):
 
