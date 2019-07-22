@@ -1,4 +1,3 @@
-#coding:utf-8
 #两层简单神经网络
 import tensorflow as tf
 import numpy as np

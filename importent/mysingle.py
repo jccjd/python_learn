@@ -29,8 +29,9 @@ print('f对象所在的内存地址是 %d, B类所在的内存地址是 %d' % (i
 
 
 class Singleton(type):
-    def __init__(cls, name, bases, dict):
-        super(Singleton, cls).__init__(name, bases, dict)
+
+    def __init__(cls, name, bases, dct):
+        super(Singleton, cls).__init__(name, bases, dct)
         cls._instance = None
     def __call__(cls, *args, **kw):
         if cls._instance is None:
