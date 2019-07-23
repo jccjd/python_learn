@@ -1,5 +1,7 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<img src="{% static 'polls/images/background.gif' %}" alt="My image">
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
