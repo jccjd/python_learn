@@ -3,9 +3,7 @@ class Node(object):
         self.value = value
         self.next = next
     def __str__(self):
-        return '<Node: value: {}, next={}>'.format(self.value, self.next)
-
-
+        return 'value: {}, next --> {}'.format(self.value, self.next)
 class LinkedList(object):
     '''
     [root]->[node1]->[node2]
@@ -120,3 +118,6 @@ class LinkedList(object):
 
 a = LinkedList()
 a.append(1)
+a.append(2)
+a.appendleft(0)
+a.remove(1)

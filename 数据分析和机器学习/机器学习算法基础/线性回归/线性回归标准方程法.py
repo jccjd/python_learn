@@ -6,19 +6,22 @@ import matplotlib.pyplot as plt
 data = np.genfromtxt('data1.txt', delimiter=',')
 x_data = data[:, 0, np.newaxis]
 y_data = data[:, 1, np.newaxis]
-plt.scatter(x_data, y_data)
-# plt.show()
 print(np.mat(x_data).shape)
 print(np.mat(y_data).shape)
 X_data = np.concatenate((np.ones((97, 1)), x_data), axis=1)
-print(X_data.shape)
-print(X_data[:2])
 #标准方程法求解回归参数 求该方程：(X^TX)^-1X^Ty
-def normalEqn(x,y):
-   return  np.linalg.inv(x.T@x)@x.T@y
-
+def normalEqu(x_martix,y_martix):
+    Xt = np.transpose(x_martix)
+    XtX = np.dot(Xt,x_martix)
+    Xty = np.dot(Xt, y_martix)
+    if np.linalg.det(XtX) == 0.0:
+        print("This matrix cannot do inverse ")
+        return
+    beta = np.linalg.solve(XtX, Xty)
+    return beta
 def weights(xArr,yArr):
     xMat = np.mat(xArr)
+    Xt = xMat.T
     yMat = np.mat(yArr)
     xTx = xMat.T * xMat #矩阵乘法
     #计算矩阵的值，如果值为0 则说明该矩阵没有可逆矩阵
@@ -29,12 +32,12 @@ def weights(xArr,yArr):
     ws = xTx.I * xMat.T * yMat
     return ws
 ws = weights(X_data,y_data)
-w = normalEqn(x_data,y_data)
+beta = normalEqu(X_data, y_data)
 print('ws',ws)
-print('w',w)
+print('w',beta)
 # 画图
 x_test = np.array([[5],[25]])
 y_test = ws[0] + x_test * ws[1]
 plt.plot(x_data,y_data,'b.')
 plt.plot(x_test,y_test,'r')
-plt.show()
+# plt.show()
