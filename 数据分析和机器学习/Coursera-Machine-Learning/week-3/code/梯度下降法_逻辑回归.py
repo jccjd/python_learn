@@ -9,8 +9,6 @@ scale = True
 data = np.genfromtxt('data1.txt', delimiter=',')
 x_data = data[:, :-1]
 y_data = data[:, -1]
-
-
 def plot():
     x0 = []
     x1 = []
@@ -28,10 +26,8 @@ def plot():
     scatter0 = plt.scatter(x0, y0, c='b', marker='o')
     scatter1 = plt.scatter(x1, y1, c='r', marker='x')
     plt.legend(handles=[scatter0, scatter1], labels=['lable0', 'lable1'], loc='best')
-
-
 plot()
-# plt.show()
+plt.show()
 
 # 数据处理，添加偏执值
 x_data = data[:, :-1]
@@ -42,7 +38,6 @@ print(np.mat(y_data).shape)
 # 给样本添加偏执项
 X_data = np.concatenate((np.ones((14, 1)), x_data), axis=1)
 print(X_data.shape)
-
 
 def sigmoid(x):
     return 1.0 / (1 + np.exp(-x))

@@ -1,41 +1,91 @@
+'''节点类'''
+
+
 class Node(object):
-    def __init__(self, value = None, prev = None, next = None):
-        self.value = value
-        self.prev = prev
-        self.next = next
+    def __init__(self, data=None):
+        self.data = data
+        self.pre = None
+        self.next = None
 
 
 class CycleDoubleLinkList(object):
-    def __init__(self, maxsize):
-        self.maxsize = maxsize
-        # 初始化首节点
-        node = Node
-        node.next = node
-        node.prev = node
-        self.root = node
-        self.length = 0
+    def __init__(self):
+        head = Node()
+        tail = Node()
+        self.head = head
+        self.tail = tail
+        self.head.next = self.tail
+        self.tail.pre = self.head
 
     def __len__(self):
-        return self.length
+        length = 0
+        node = self.head
+        while node.next is not self.tail:
+            length += 1
+            node = node.next
+        return length
 
-    def headnode(self):
-        return self.root.next
+    def append(self, data):
+        node = Node(data)
+        pre = self.tail.pre
+        pre.next = node
+        node.pre = pre
+        self.tail.pre = node
+        node.next = self.tail
+        return node
 
-    def tailnode(self):
-        return self.root.prev
+    def get(self, index):
 
-    def append(self, value):
-        node = Node(value)
-        tailnode = self.root or self.tailnode()
-        tailnode.next = node
-        node.prev = tailnode
-        node.next = self.root
-        self.root.prev = node
-        self.length += 1
+        length = len(self)
+        index = index if index >= 0 else length + index
+        if index >= length or index < 0: return None
+        node = self.head.next
+        while index:
+            node = node.next
+            index -= 1
+        return node
+
+    def set(self, index, data):
+        node = self.get(index)
+        if node:
+            node.data = data
+        return node
+    def insert(self, index, data):
+
+        length = len(self)
+        if abs(index + 1) > length:
+            return False
+        index = index if index >= 0 else index + 1 + length
+        next_node = self.get(index)
+
+        if next_node:
+            node = Node(data)
+            pre_node = next_node.pre
+            pre_node.next = node
+            node.pre = pre_node
+            node.next = next_node
+            next_node.pre = node
+            return node
+    def delete(self, index):
+        node = self.get(index)
+        if node:
+            node.pre.next = node.next
+            node.next.pre = node.pre
+            return True
+        return False
 
 
-a = CycleDoubleLinkList(10)
+def test_double_link_list():
 
-a.append(1)
-a.append(2)
-print(a.root.next)
+    a = CycleDoubleLinkList()
+    a.append(1)
+    a.append(2)
+    # get test
+    a1value = a.get(0).data
+    assert a1value == 2
+    # set test
+    setdata = a.set(0,2)
+    print(a.head.next.data)
+
+if __name__ == '__main__':
+    test_double_link_list()

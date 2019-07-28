@@ -27,7 +27,7 @@ def plot():
     scatter1 = plt.scatter(x1,y1,c = 'r', marker='x')
     plt.legend(handles=[scatter0,scatter1],labels=['label0','label1'],loc = 'best')
 plot()
-# plt.show()
+plt.show()
 
 logistic1 = linear_model.LogisticRegression()
 logistic1.fit(x_data,y_data)
