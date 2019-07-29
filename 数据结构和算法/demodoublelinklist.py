@@ -1,77 +1,66 @@
 class Node(object):
-    def __init__(self, data=None):
-        self.pre = None
-        self.data = data
-        self.next = None
-
-class DoubleLinkedlist(object):
+    def __init__(self,value=None,prev=None,next=None):
+        self.prev = prev
+        self.value = value
+        self.next = next
+class CircleLinkedList(object):
     def __init__(self):
-        # build root_node and tail_node
-        self.root_node = Node()
-        self.tail_node = Node()
+        node = Node()
+        self.root = node
+        self.root.prev = node
+        self.root.next = node
+        self.length = 0
 
-        # root->next ---> tail
-        # tail->pre ---> root
-        self.root_node.next = self.tail_node
-        self.tail_node.pre = self.root_node
+    # 循环链表，tail即使sele.root.pre
     def append(self,value):
-
         node = Node(value)
-        tail_node = self.tail_node
-        pre = tail_node.pre
-        pre.next = node
-        node.pre = pre
-        node.next = self.tail_node
-        self.tail_node.pre = node
-        return node
-    def __len__(self):
-        length = 0
-        node = self.root_node
-        while node.next is not self.tail_node:
-            length += 1
-            node = node.next
-        return length
-    def get(self,index):
-        node = self.root_node.next
-        while index:
-            node = node.next
-            index -= 1
-        return node
-    def set(self, index, value):
-        node = self.get(index)
-        node.data = value
-        return node
+        tail = self.root.prev
 
-    def insert(self, index, value):
-        index_node = self.get(index)
-        pre_node = index_node.pre
+        tail.next = node
+        node.prev = tail
 
-        node = Node(value)
+        self.root.prev = node
+        node.next = self.root
+        self.length += 1
 
-        pre_node.next = node
-        node.pre = pre_node
+    def iter_node(self):
+        if self.root.next is self.root:
+            return
+        flagindex = self.root.next
+        while flagindex.next is not self.root:
+            yield flagindex
+            flagindex = flagindex.next
+        yield flagindex
+    def __iter__(self):
+        for node in self.iter_node():
+            yield node.value
+    def find(self,index):
+        flagindex = 0
+        for node in self.iter_node():
+            if flagindex == index:
+                return node
+            flagindex += 1
+        return -1
+    def remove(self,index):
+        node = self.find(index)
+        prevnode = node.prev
+        nextnode = node.next
+        prevnode.next = nextnode
+        nextnode.prev = prevnode
+        del node
 
-        index_node.pre = node
-        node.next = index_node
-    def delete(self,index):
-        node = self.get(index)
-        if node:
-            node.pre.next = node.next
-            node.next.pre = node.pre
-            return True
-        return False
-
-
-class MetaClssList(type):
-    def __new__(cls, name, base,dct):
-        dct = ((k,v) for k,v in dct.items if not k.startwith('__'))
-        mapping = dict((k,v) for k,v in dct)
-
-if __name__ == '__main__':
-    a = DoubleLinkedlist()
-    a.append(1)
-    a.set(1,3)
-    a.insert(1,2)
-    a.delete(1)
-    print()
-
+    def iter_reverse_node(self):
+        curnode = self.root.prev
+        while curnode.prev is not self.root:
+            yield curnode
+            curnode = curnode.prev
+        yield curnode
+a = CircleLinkedList()
+a.append(1)
+a.append(2)
+a.append(3)
+nodevalue = [i for i in a.__iter__()]
+reverse = a.iter_reverse_node()
+reverselist = [i.value for i in reverse.__iter__()]
+print(nodevalue)
+print(reverselist)

@@ -8,7 +8,7 @@ class Node(object):
         self.next = None
 
 
-class CycleDoubleLinkList(object):
+class DoubleLinkList(object):
     def __init__(self):
         head = Node()
         tail = Node()
@@ -50,6 +50,7 @@ class CycleDoubleLinkList(object):
         if node:
             node.data = data
         return node
+
     def insert(self, index, data):
 
         length = len(self)
@@ -66,6 +67,7 @@ class CycleDoubleLinkList(object):
             node.next = next_node
             next_node.pre = node
             return node
+
     def delete(self, index):
         node = self.get(index)
         if node:
@@ -76,16 +78,16 @@ class CycleDoubleLinkList(object):
 
 
 def test_double_link_list():
-
-    a = CycleDoubleLinkList()
+    a = DoubleLinkList()
     a.append(1)
     a.append(2)
     # get test
     a1value = a.get(0).data
-    assert a1value == 2
+    assert a1value == 1
     # set test
-    setdata = a.set(0,2)
+    setdata = a.set(0, 2)
     print(a.head.next.data)
+
 
 if __name__ == '__main__':
     test_double_link_list()

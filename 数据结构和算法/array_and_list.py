@@ -1,7 +1,3 @@
-from array import array
-arr = array('u', 'asdf')
-print(arr[0], arr[1])
-
 class Array(object):
 
     def __init__(self, size=32):
@@ -26,11 +22,8 @@ class Array(object):
             yield item
 
 
-def test_array():
-    size = 10
-    a = Array(size)
-    a[0] = 1
-    assert a[0] == 1
-    assert len(a) == 10
+size = 10
+a = Array(size)
+a[0] = 1
+print(a[0])
 
-print(test_array())
