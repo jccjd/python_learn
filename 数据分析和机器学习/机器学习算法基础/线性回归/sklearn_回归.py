@@ -10,8 +10,8 @@ print(data)
 
 
 #切分数据
-x_data = data[:,:-1]
-y_data = data[:,-1]
+x_data = data[:, : -1]
+y_data = data[:, -1]
 print(x_data)
 print(y_data)
 
