@@ -12,7 +12,7 @@ class LinkedList(object):
         self.length = 0
 
     def append(self, value):
-        node = Node()
+        node = Node(value)
         if self.tail is None:
             self.root.next = node
         else:
@@ -25,9 +25,7 @@ class LinkedList(object):
         while flaginde.next is not None:
             yield flaginde
             flaginde = flaginde.next
-        if flaginde is not None:
-            yield flaginde
-
+        yield flaginde
     def __iter__(self):
         for node in self.iter_node():
             yield node.value
@@ -59,4 +57,12 @@ class LinkedList(object):
             return node
         return -1
 
+
+a = LinkedList()
+a.append(1)
+a.append(2)
+a.append(3)
+a.append(3)
+list = [list for list in iter(a)]
+print(list)
 

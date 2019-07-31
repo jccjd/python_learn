@@ -4,8 +4,9 @@ def SumNumber(num1,num2):
     if num1 > num2:
         num1, num2 = num2, num1
     list = [list for list in range(num1, num2 + 1)]
+    print(list)
     return sum(list)
-a = SumNumber(10,1)
+a = SumNumber(-10,1)
 print(a)
 
 #封装乘法表
