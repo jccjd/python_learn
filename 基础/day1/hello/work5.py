@@ -1,5 +1,5 @@
 # 判断用户输入的字符是否包含空白字符
-userstr = 'll'
+userstr = '/t '
 list = userstr.split(' ')
 print(list.__len__() > 1)
 def is_has_space(userstr):

@@ -10,7 +10,7 @@ from scipy import ndimage
 plt.rcParams['figure.figsize'] = (5.0, 4.0) # set default size of plots
 plt.rcParams['image.interpolation'] = 'nearest'
 plt.rcParams['image.cmap'] = 'gray'
-
+plt.show()
 np.random.seed(1)
 def sigmoid(Z):
     A = 1/(1+np.exp(-Z))
