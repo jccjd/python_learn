@@ -28,6 +28,5 @@ print(a(3))
 
 foo = [i for i in range(101)]
 b = filter(lambda x: x % 3 == 0, foo)
-
 for _ in b:
-    print(b.__next__())
+    print(b.__next__(),end=' ')
