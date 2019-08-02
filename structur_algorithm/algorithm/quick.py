@@ -26,8 +26,8 @@ def quicksort(arrs):
     right = [x for x in arrs if x > pivot]
     return quicksort(left) + middle + quicksort(right)
 print(quicksort([3,6,8,10,1,2,1]))
-list = [2,5,7,6,3,1]
-l = quick(list,0,5)
+listd = [2, 5, 7, 6, 3, 1]
+l = quick(list, 0, 5)
 print(l)
 
 
