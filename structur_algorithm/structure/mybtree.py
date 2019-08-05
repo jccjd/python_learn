@@ -1,15 +1,17 @@
 class Node(object):
-    def __init__(self, item):
-        self.item = item
-        self.lchild = None
-        self.rchild = None
+
+    def __init__(self, value=None,lchild=None, rchild=None):
+        self.value = value
+        self.lchild = lchild
+        self.rchild = rchild
 
 class Tree(object):
+
     def __init__(self):
         self.root = None
 
-    def add(self, item):
-        node = Node(item)
+    def append(self, value):
+        node = Node(value)
         if self.root is None:
             self.root = node
             return
@@ -17,64 +19,54 @@ class Tree(object):
         queue = [self.root]
 
         while queue:
-            cur_node = queue.pop(0)
-            if cur_node.lchild is None:
-                cur_node.lchild = node
+            curnode = queue.pop(0)
+
+            if curnode.lchild is None:
+                curnode.lchild = node
                 return
             else:
-                queue.append(cur_node.lchild)
+                queue.append(curnode.lchild)
 
-            if cur_node.rchild is None:
-                cur_node.rchild = node
+            if curnode.rchild is None:
+                curnode.rchild = node
                 return
-
             else:
-                queue.append(cur_node.rchild)
+                queue.append(curnode.rchild)
 
 
-    def breadth_travel(self):
-        """广度遍历"""
+    def breath_oder(self):
         if self.root is None:
             return
         queue = [self.root]
         while queue:
-            cur_node = queue.pop(0)
-            print(cur_node.item, end=' ')
-            if cur_node.lchild is not None:
-                queue.append(cur_node.lchild)
-            if cur_node.rchild is not None:
-                queue.append(cur_node.rchild)
-    def preoder(self, node):
-        """先序遍历"""
+            curnode = queue.pop(0)
+
+            print(curnode.value, end=' ')
+            if curnode.lchild is not None:
+                queue.append(curnode.lchild)
+
+            if curnode.rchild is not None:
+                queue.append(curnode.rchild)
+
+    def preoder(self,node):
         if node is None:
             return
-        print(node.item,end=' ')
+        print(node.value, end=',')
         self.preoder(node.lchild)
         self.preoder(node.rchild)
 
-    def inoder(self, node):
+    def centeroder(self, node):
         if node is None:
             return
-        self.inoder(node.lchild)
-        print(node.item,end=' ')
-        self.inoder(node.rchild)
+        self.centeroder(node.lchild)
+        print(node.value, end=' -')
+        self.centeroder(node.rchild)
 
-    def afteroder(self, node):
-        if node is None:
-            return
-        self.afteroder(node.lchild)
-        self.afteroder(node.rchild)
-        print(node.item,end=' ')
-tree = Tree()
-tree.add(1)
-tree.add(2)
-tree.add(3)
-tree.breadth_travel()
-print('广度优先')
-
-tree.preoder(tree.root)
-print('先序')
-tree.inoder(tree.root)
-print('中序')
-tree.afteroder(tree.root)
-print('后序')
+a = Tree()
+a.append(1)
+a.append(2)
+a.append(3)
+a.append(4)
+a.breath_oder()
+a.preoder(a.root)
+a.centeroder(a.root)

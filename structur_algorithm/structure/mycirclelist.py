@@ -72,17 +72,47 @@ class CircleList(object):
             yield tailnode.value
             tailnode = tailnode.prev
         yield tailnode.value
-a = CircleList()
-a.append(1)
-a.append(2)
-a.append(3)
-# print(a.find(2).value)
-# a.remove(0)
-# a.update(1, 9)
+# a = CircleList()
+# a.append(1)
+# a.append(2)
+# a.append(3)
+# # print(a.find(2).value)
+# # a.remove(0)
+# # a.update(1, 9)
 # listd = [i for i in a]
-# a.reverse()
-relist = [i for i in a.reverse()]
-
+# # a.reverse()
+# relist = [i for i in a.reverse()]
+#
 # print(listd)
-print(relist)
+# print(relist)
+class Deque(CircleList):
 
+    # 实现双端队列就等于是同时实现了队列和栈了
+    # 当然还有跟更简单的方法，直接调用list的push和pop
+    # 可以快速实现队列和栈
+
+    def __len__(self):
+        return self.length
+    def pop(self):
+        if len(self) == 0:
+            return None
+        headnode = self.headnode()
+        value = headnode.value
+        self.remove(0)
+        return value
+    def popleft(self):
+        if len(self) == 0:
+            return None
+        tailnode = self.tailnode()
+        value = tailnode.value
+        self.remove(self.length - 1)
+        return value
+
+
+# dequ = Deque()
+# dequ.append(1)
+# dequ.append(2)
+# dequ.append(3)
+# print(dequ.popleft())
+# print(dequ.popleft())
+# print(dequ.popleft())

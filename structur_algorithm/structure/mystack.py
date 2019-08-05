@@ -90,12 +90,22 @@ class CircularDoubleLinkedList(object):
             curnode = curnode.prev
         yield curnode
 
+
+cir = CircularDoubleLinkedList()
+cir.append(1)
+cir.append(2)
+cir.append(3)
+for i in cir.__iter__():
+    print(i)
+
 class Deque(CircularDoubleLinkedList):
+
     def pop(self):
         if len(self) == 0:
             raise Exception('empty')
         tailnode = self.tailnode()
         value = tailnode.value
+        self.remove(tailnode)
         return value
 
     def popleft(self):
@@ -114,3 +124,4 @@ class Stack(object):
 
     def pop(self):
         return self.deque.pop()
+

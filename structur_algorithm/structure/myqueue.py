@@ -22,9 +22,9 @@ class Array:
             yield item
 
 class Queue:
-    def __init__(self, maxsize):
+    def __init__(self, maxsize=5):
         self.maxsize = maxsize
-        self.array = Array()
+        self.array = Array(maxsize)
         self.head = 0
         self.tail = 0
 
@@ -32,12 +32,19 @@ class Queue:
         return self.head - self.tail
 
     def push(self, value):
-        if len(self) >= self.maxsize:
-            self.array[self.head % self.maxsize] = value
+        self.array[self.head % self.maxsize] = value
         self.head += 1
 
     def pop(self):
         value = self.array[self.tail % self.maxsize]
         self.tail += 1
+        return value
 
 
+qu = Queue()
+qu.push(1)
+qu.push(2)
+qu.push(3)
+print(qu.pop())
+print(qu.pop())
+print(qu.pop())

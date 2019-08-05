@@ -7,6 +7,7 @@ class Singleton(type):
         if cls._instance is None:
             cls._instance = super(Singleton,cls).__call__(*args,**kwargs)
         return cls._instance
+
 #new方法实现Singleton
 class Singleton1(object):
     def __new__(cls, *args, **kwargs):

@@ -31,5 +31,4 @@ qu.add_front('A')
 qu.add_front('b')
 qu.add_front('c')
 for _ in range(len(qu)):
-
-    print(qu.pop_rear())
+    print(qu.pop_front())

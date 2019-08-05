@@ -39,7 +39,7 @@ class User(Model):
 
     id = 'id'
     name = ('username')
-    email = ('email2')
+    email = 'email2'
     password = ('password')
 
 class good(Model):
