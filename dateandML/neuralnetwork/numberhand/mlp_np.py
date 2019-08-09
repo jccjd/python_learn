@@ -63,9 +63,6 @@ for i in range(training_iterations):
 ### 测试集输出结果可视化
 
 def res_Visual(n):
-    # sess=tf.Session()
-    # sess.run(tf.global_variables_initializer())
-
     final_opt_a = tf.argmax(final_opt, 1).eval(session=sess, feed_dict={X: mnist.test.images, Y: mnist.test.labels})
 
     fig, ax = plt.subplots(nrows=int(n / 5), ncols=5)

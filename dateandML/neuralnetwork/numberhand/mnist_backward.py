@@ -7,7 +7,7 @@ BATCH_SIZE = 200
 LEARNING_RATE_BASE = 0.1
 LEARNING_RATE_DECAY = 0.99
 REGULARIZER = 0.0001
-STEPS = 50000
+STEPS = 1000
 MOVING_AVERAGE_DECAY = 0.99
 MODEL_SAVE_PATH="./model/"
 MODEL_NAME="mnist_model"
@@ -15,7 +15,7 @@ MODEL_NAME="mnist_model"
 
 def backward(mnist):
 
-    x = tf.placeholder(tf.float32, [None, mnist_forward.INPUT_NODE])
+    x = tf.placeholder(tf.float32, [None, 784])
     y_ = tf.placeholder(tf.float32, [None, mnist_forward.OUTPUT_NODE])
     y = mnist_forward.forward(x, REGULARIZER)
     global_step = tf.Variable(0, trainable=False)
@@ -23,6 +23,10 @@ def backward(mnist):
     ce = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y, labels=tf.argmax(y_, 1))
     cem = tf.reduce_mean(ce)
     loss = cem + tf.add_n(tf.get_collection('losses'))
+
+    correct_prediction = tf.equal(tf.argmax(y_, 1), tf.argmax(y, 1))
+
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, 'float'))  # 将张量转化成float
 
     learning_rate = tf.train.exponential_decay(
         LEARNING_RATE_BASE,
@@ -46,11 +50,12 @@ def backward(mnist):
 
         for i in range(STEPS):
             xs, ys = mnist.train.next_batch(BATCH_SIZE)
+
             _, loss_value, step = sess.run([train_op, loss, global_step], feed_dict={x: xs, y_: ys})
-            if i % 1000 == 0:
+            if i % 500 == 0:
                 print("After %d training step(s), loss on training batch is %g." % (step, loss_value))
                 saver.save(sess, os.path.join(MODEL_SAVE_PATH, MODEL_NAME), global_step=global_step)
-
+                print(sess.run([accuracy], feed_dict={x: mnist.test.images, y_: mnist.test.labels}))
 
 def main():
     mnist = input_data.read_data_sets("./data/", one_hot=True)

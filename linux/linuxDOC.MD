@@ -1,0 +1,35 @@
+### 所常用命令
+1. 卸载软件包
+
+    sudo apt-get autoremove [packagename]
+
+**更换pip的源**
+
+    mkdir ~/.pip
+    vim ~/.pip/pip.conf
+输入内容, 地址为国内的一些源，可以更换
+
+    [global]
+    index-url = https://mirrors.aliyun.com/pypi/simple
+
+
+清华：https://pypi.tuna.tsinghua.edu.cn/simple
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+华中理工大学：http://pypi.hustunique.com/
+山东理工大学：http://pypi.sdutlinux.org/
+豆瓣：http://pypi.douban.com/simple/
+
+### 报错
+    Could not install packages due to an EnvironmentError: [Errno 13] 权限不够: '/usr/local/lib/python3.7/dist-packages/wheel-0.33.4.dist-info'
+    Consider using the `--user` option or check the permissions.
+
+需要在最后加上 `--user`
+
+    pip install tensorflow --user
+
+### 快捷键
+`ctrl +shift -`, `ctrl -` 终端窗口的缩放
+### ls
+    
+    ls -a
+
