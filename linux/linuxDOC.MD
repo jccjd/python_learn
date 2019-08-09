@@ -31,5 +31,52 @@
 `ctrl +shift -`, `ctrl -` 终端窗口的缩放
 ### ls
     
-    ls -a
+    ls -a 显示所有信息
+    ls -l 列表
+    ls -h 默认状态
+ls的通配
+    
+    ls te* 显示以te开头的
+    ls *html 以html结束的文件
+    ls ?.c 只找第一个字符任意，后缀为.c的文件
 
+### rm
+    
+    rm -i 删除前询问
+    rm -f 强制删除
+    rm -r 递归删除删除文件夹
+    
+### cp
+    
+    cp -a 保留文件原有属性
+    cp -f 若有重复不提示
+    cp -i 若有重复请求用户确认
+    cp -r 递归复制，复制文件夹
+    cp -v view 
+### 重定向
+    
+    ls > test.txt ls的输出会存储在test.txt中
+
+### 管道
+一个命令的输出是另一个命令的输入
+    
+    ls -lh | more
+    
+### ln
+默认 是硬链接
+软链接:源文件失效也失效
+硬链接:只能链接普通文件
+
+    硬链接：ln 源文件 链接文件
+    软链接：ln -s 源文件 链接文件
+
+### grep
+匹配
+    
+    grep -[] 'target' filename.txt
+    
+    -V 取反
+    -n 显示行号
+    -i 不区分大小写
+
+    
