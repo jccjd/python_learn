@@ -5,6 +5,7 @@ class Node(object):
 
 
 class LinkedList(object):
+
     def __init__(self):
         node = Node()
         self.root = node
