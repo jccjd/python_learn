@@ -1,21 +1,35 @@
-# 进程间不同共享全局变量
-from multiprocessing import Process
-import os
+import threading
 import time
-nums = [11, 22]
-def work1():
-    print(f'{os.getpid(),nums}')
-    for i in range(3):
-        nums.append(i)
+lock_gun = threading.Lock()
+lock_blt = threading.Lock()
+
+class myThread(threading.Thread):
+    def __init__(self):
+        threading.Thread.__init__(self)
+
+    def run(self):
+        self.gun()
+        self.blt()
+
+    def gun(self):
+        lock_gun.acquire()
+        print(f'{self.name},get gun')
+
+        lock_blt.acquire()
+        print(f'{self.name},get blt')
+        lock_blt.release()
+        lock_gun.release()
+
+    def blt(self):
+        lock_blt.acquire()
+        print(f'{self.name} get blt')
         time.sleep(1)
-        print(f'{(os.getpid(), nums)}')
 
-def work2():
-    print(f'in process2 pid={os.getpid()}, nums={nums}')
+        lock_gun.acquire()
+        print(f'{self.name} get gun')
+        lock_gun.release()
+        lock_blt.release()
 
-p1 = Process(target=work1)
-p1.start()
-p1.join()
-
-p2 = Process(target=work2)
-p2.start()
+for i in range(2):
+    my_th = myThread()
+    my_th.start()
