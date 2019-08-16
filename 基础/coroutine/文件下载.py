@@ -11,7 +11,7 @@ def copy_file_path(path1,filename, path2):
     f_read = open(path1+'/'+filename,'rb')
     f_write = open(path2+'/'+filename,'wb')
     while True:
-        time.sleep(0.1)
+        time.sleep(1)
         context = f_read.read(1024)
         if context:
             f_write.write(context)

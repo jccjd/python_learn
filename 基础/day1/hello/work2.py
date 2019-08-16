@@ -1,29 +1,32 @@
-import random
-'''
-规则红球： 6个 1-36随机数
-蓝球： 1个 1-12 随机数
+class Car(object):
+    def __init__(self, name=None, loss=None):
+        self.name = name
+        self.loss = loss
 
-'''
+    def getName(self):
+        return self.name
 
-# 有bug 去重时会少一个球
-# print(f'red ball is: {sorted(set([random.randint(1,36) for _ in range(6)]))}\nbule ball is: {[random.randint(1,12)]}')
+    def getPrice(self):
+        loss  = self.loss
+        return loss[0]
 
-def doubleBalls():
-    while True:
-        redBall = set([random.randint(1,36) for _ in range(6)])
-        if redBall.__len__() == 6:
-            return sorted(redBall),[random.randint(1, 12)]
+    def getLoss(self):
+        loss = self.loss
+        return loss[1] * loss[2]
 
-red, blue = doubleBalls()
-print(red, blue)
+def battle(car1, car2):
+    if car1.getPrice() > car2.getPrice():
+        batter_price = car1
+    else:
+        batter_price = car2
 
-'''
-获取当前文件名的后缀
-'''
-file1 = 'hello'
-file2 = 'hello.txt'
-suffix = file2.split('.')
-if suffix.__len__() == 1:
-    print('该文件无后缀')
-else:
-    print("文件后缀为:",suffix[1])
+    if car1.getLoss() > car2.getLoss():
+        batter_loss = car1
+    else:
+        batter_loss = car2
+    print(f'{batter_price.getName()}的价格更便宜,{batter_loss.getName()}的损失值比较低')
+
+
+Bmw = Car('宝马', [60,9,500])
+Benz = Car('奔驰', [80,7,600])
+
