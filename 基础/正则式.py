@@ -66,5 +66,6 @@ print(pattern.findall(list))
 
 
 
-
-
+word = "123 24"
+rulu = re.compile(r'\d+')
+print(rulu.findall(word))
