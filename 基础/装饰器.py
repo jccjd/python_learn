@@ -36,10 +36,10 @@ fun()
 
 # 装饰器有参数
 def timefun(fun):
-    def waper(a,b):
+    def waper(*args,**kwargs):
         print('----waper---')
-        print(a,b)
-        fun(a, b)
+        print(*args,**kwargs)
+        fun(*args, **kwargs)
     return waper
 
 
