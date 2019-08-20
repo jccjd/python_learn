@@ -1,0 +1,1212 @@
+Index: venv/lib/python3.7/site-packages/django/core/servers/basehttp.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/django/core/servers/basehttp.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/django/core/servers/basehttp.py	(date 1566206187605)
+@@ -120,7 +120,7 @@
+     protocol_version = 'HTTP/1.1'
+ 
+     def address_string(self):
+-        # Short-circuit parent method to not call socket.getfqdn
++        # Short-circuit parent method to not call socket_.getfqdn
+         return self.client_address[0]
+ 
+     def log_message(self, format, *args):
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/requests/adapters.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/requests/adapters.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/requests/adapters.py	(date 1566206188181)
+@@ -92,7 +92,7 @@
+     :param pool_connections: The number of urllib3 connection pools to cache.
+     :param pool_maxsize: The maximum number of connections to save in the pool.
+     :param max_retries: The maximum number of retries each connection
+-        should attempt. Note, this applies only to failed DNS lookups, socket
++        should attempt. Note, this applies only to failed DNS lookups, socket_
+         connections and connection timeouts, never to requests where data has
+         made it to the server. By default, Requests does not retry failed
+         connections. If you need granular control over the conditions under
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/cli/cmdoptions.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/cli/cmdoptions.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_internal/cli/cmdoptions.py	(date 1566206187917)
+@@ -249,7 +249,7 @@
+     dest='timeout',
+     type='float',
+     default=15,
+-    help='Set the socket timeout (default %default seconds).',
++    help='Set the socket_ timeout (default %default seconds).',
+ )  # type: Callable[..., Option]
+ 
+ skip_requirements_regex = partial(
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/packages/backports/makefile.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/packages/backports/makefile.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/packages/backports/makefile.py	(date 1566206188081)
+@@ -3,8 +3,8 @@
+ backports.makefile
+ ~~~~~~~~~~~~~~~~~~
+ 
+-Backports the Python 3 ``socket.makefile`` method for use with anything that
+-wants to create a "fake" socket object.
++Backports the Python 3 ``socket_.makefile`` method for use with anything that
++wants to create a "fake" socket_ object.
+ """
+ import io
+ 
+@@ -14,7 +14,7 @@
+ def backport_makefile(self, mode="r", buffering=None, encoding=None,
+                       errors=None, newline=None):
+     """
+-    Backport of ``socket.makefile`` from Python 3.5.
++    Backport of ``socket_.makefile`` from Python 3.5.
+     """
+     if not set(mode) <= {"r", "w", "b"}:
+         raise ValueError(
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/requests/sessions.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/requests/sessions.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/requests/sessions.py	(date 1566206187765)
+@@ -157,7 +157,7 @@
+             resp.history = hist[1:]
+ 
+             try:
+-                resp.content  # Consume socket so it can be released
++                resp.content  # Consume socket_ so it can be released
+             except (ChunkedEncodingError, ContentDecodingError, RuntimeError):
+                 resp.raw.read(decode_content=False)
+ 
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py	(date 1566206188233)
+@@ -102,7 +102,7 @@
+     """
+     if not cert:
+         raise ValueError("empty or no certificate, match_hostname needs a "
+-                         "SSL socket or SSL context with either "
++                         "SSL socket_ or SSL context with either "
+                          "CERT_OPTIONAL or CERT_REQUIRED")
+     try:
+         # Divergence from upstream: ipaddress can't handle byte str
+Index: 基础/socket/socketclass/down/qq.txt
+===================================================================
+--- 基础/socket/socketclass/down/qq.txt	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketclass/down/qq.txt	(date 1565692860979)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/django/db/backends/mysql/client.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/django/db/backends/mysql/client.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/django/db/backends/mysql/client.py	(date 1566206187437)
+@@ -28,7 +28,7 @@
+             args += ["--password=%s" % passwd]
+         if host:
+             if '/' in host:
+-                args += ["--socket=%s" % host]
++                args += ["--socket_=%s" % host]
+             else:
+                 args += ["--host=%s" % host]
+         if port:
+Index: 基础/socket/socketclass/test.txt
+===================================================================
+--- 基础/socket/socketclass/test.txt	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketclass/test.txt	(date 1565685201451)
+@@ -1,0 +1,0 @@
+Index: 基础/socket/socketclass/clientflie.py
+===================================================================
+--- 基础/socket/socketclass/clientflie.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketclass/clientflie.py	(date 1565693055995)
+@@ -1,0 +1,0 @@
+Index: 基础/socket/socketclass/serverfile.py
+===================================================================
+--- 基础/socket/socketclass/serverfile.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketclass/serverfile.py	(date 1565692854667)
+@@ -1,0 +1,0 @@
+Index: 基础/socket/socketdow/__init__.py
+===================================================================
+--- 基础/socket/socketdow/__init__.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketclass/__init__.py	(date 1565686488413)
+@@ -1,0 +1,0 @@
+Index: 基础/正则式.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 基础/正则式.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/正则式.py	(date 1566211448090)
+@@ -1,71 +1,62 @@
+ import re
+-
+-print(re.match('www', 'www.baidu.com').span()) # 在起始位置开始
+-print(re.match('bai','www.baidu.com'))
+-line = 'Cats are smarter than dogs'
+-matchObj = re.match(r'(.*) are (.*?) .*',line, )
+-print('--',matchObj.groups())
+-if matchObj:
+-    print("matchObj,group()", matchObj.group())
+-    print("matchObj,group()", matchObj.group(1))
+-    print("matchObj,group()", matchObj.group(2))
+-
+-# search
+-
+-print(re.search('www', 'www.runoob').span())
+-print(re.search('com','www.runoob.com').span())
+-line = "cats are smarter than dogs "
+-searchObj = re.search(r'(.*) are (.*?) .*', line)
+-if searchObj:
+-    print("searchObj.group()", searchObj.group())
+-    print(searchObj.group(1))
+-    print(searchObj.group(2))
+-
++import requests
+ 
+-phone = '2004-959-559 # 这是一个电话号码'
++content = 'Hello 1234567 is a number. Regex String'
+ 
+-# 删除注释
+-num = re.sub(r'#.*$', "", phone)
+-print("电话号码：", num)
+-# 移除非数字的内容
+-num = re.sub(r'\D', "", phone)
+-print(num)
+-# 参数是个函数
+-def double(mathed):
+-    value = int(mathed.group('value'))
+-    return str(value * 2)
+-s = 'A23G4H567'
+-print(re.sub('(?P<value>\d+)', double,s))
++pattern = re.compile("^Hello (\d+).*String$")
++pattern1 = re.compile(".*(\d+).*")
++# 非贪婪
++pattern2 = re.compile(".*?(\d+).*",re.S)
++print(pattern2.findall(content))
+ 
+-# complie(pattern[,flags ,re.I 忽略大小写 re.M多行模式])
+-pattern = re.compile(r'\d+') # 匹配至少一个数字
+-m = pattern.match('one12twothree34four')
+-print(m)
+-m = pattern.match('one12twothree34four', 3, 10)
+-print(m)
+-print(m.group(0))
+-print(m.start(0))
+-print(m.end(0))
+-print(m.span(0))
++# 多行匹配
++content1 = '''Hello is a number. 
++           Regex String 1234567'''  # 把数字换到第二行
++pattern3 = re.compile(".*?(\d+).*", re.S)
++print(pattern3.findall(content1))
+ 
++# 取出html中的歌手名和歌名
++html = '''<div id="songs-list">
++    <h2 class="title">经典老歌</h2>
++    <p class="introduction">
++        经典老歌列表
++    </p>
++    <ul id="list" class="list-group">
++        <li data-view="2">一路上有你</li>
++        <li data-view="7">
++            <a href="/2.mp3" singer="任贤齐">沧海一声笑</a>
++        </li>
++        <li data-view="4" class="active">
++            <a href="/3.mp3" singer="齐秦">往事随风</a>
++        </li>
++        <li data-view="6"><a href="/4.mp3" singer="beyond">光辉岁月</a></li>
++        <li data-view="5"><a href="/5.mp3" singer="陈慧琳">记事本</a></li>
++        <li data-view="5">
++            <a href="/6.mp3" singer="邓丽君">但愿人长久</a>
++        </li>
++    </ul>
++</div>'''
++pattern4 = re.compile('<a.*? singer="(.*?)">(.*?)</a>')
++print(pattern4.findall(html))
+ 
+-patttern = re.compile(r'\d+') # 查找数字
+-result1 = pattern.findall('runoob 123 google 456')
+-result2 = pattern.findall('run88oob123google456',0,10)
+-print(result1)
+-print(result2)
++content = requests.get('https://movie.douban.com/chart').text
+ 
+-print(re.split(' ', 'runoob, runoob, runoob'))
+-print(re.split(' ','this isa b c'))
++with open('douban.html','w+') as f:
++    f.write(content)
++# 豆瓣电影排行榜
++# pattern = re.compile('class="pl2".*?<.*?="(.*?)".*?>(.*?)<span.*?>(.*?)</span>.*?"rating_nums">(.*?)</span>.*?"pl">(.*?)</span>', re.S)
++# # compile可以在多次使用中提高效率，这里影响不大
++# results = re.findall(pattern, content)
++# for result in results:
++#     url, name1, name2, nums, pl = result
++#     print(url, name1.replace("/","").strip(), name2.replace("/","").strip(), nums, pl)
+ 
+ 
+-# 字符匹配
+-list = 'python Python rube'
+-pattern = re.compile('[Pp]ython')
+-print(pattern.findall(list))
++pattern = re.compile('class="clearfix".*?<.*?>(.*?)</div>.*?<a.*?href="(.*?)".*?>(.*?)</a>',re.S)
++results = re.findall(pattern, content)
++for result in results:
++    top, url, name = result
++    with open('topmove.txt','a+') as f:
++        f.write(f"{top} {url} {(re.sub('n', '', name)).strip()} \n")
+ 
+-
+-
+-word = "123 24"
+-rulu = re.compile(r'\d+')
+-print(rulu.findall(word))
++    # print(top, url, re.sub('\n', " ", name))
+\ No newline at end of file
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/distlib/compat.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/distlib/compat.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/distlib/compat.py	(date 1566206188293)
+@@ -155,7 +155,7 @@
+         """
+         if not cert:
+             raise ValueError("empty or no certificate, match_hostname needs a "
+-                             "SSL socket or SSL context with either "
++                             "SSL socket_ or SSL context with either "
+                              "CERT_OPTIONAL or CERT_REQUIRED")
+         dnsnames = []
+         san = cert.get('subjectAltName', ())
+Index: 基础/socket/socketdow/test.txt
+===================================================================
+--- 基础/socket/socketdow/test.txt	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketdow/test.txt	(date 1565685201451)
+@@ -1,0 +1,0 @@
+Index: 基础/socket/__init__.py
+===================================================================
+--- 基础/socket/__init__.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/getnetimage.py	(date 1566215727959)
+@@ -1,0 +1,24 @@
++import re
++import urllib.request
++from gevent import monkey
++import gevent
++monkey.patch_all()
++import random
++import requests
++context = requests.get("https://movie.douban.com/subject/26909790/celebrities").text
++
++
++patten = re.compile('class="avatar" style=".*?url\((.*?)\)">')
++
++images = patten.findall(context)
++def my_download(url):
++    print(url)
++    resp = urllib.request.urlopen(url)
++
++    data = resp.read()
++    with open(f"image/{random.random()}.jpg","wb") as f:
++        f.write(data)
++
++gevent.joinall([
++    gevent.spawn(my_download,images)
++])
+\ No newline at end of file
+Index: 基础/socket/socketdow/demo_tcp_server.py
+===================================================================
+--- 基础/socket/socketdow/demo_tcp_server.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketdow/demo_tcp_server.py	(date 1565686488569)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/distlib/_backport/tarfile.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/distlib/_backport/tarfile.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/distlib/_backport/tarfile.py	(date 1566206187669)
+@@ -391,7 +391,7 @@
+        needs to have a read() or write() method and is accessed
+        blockwise.  Use of gzip or bzip2 compression is possible.
+        A stream-like object could be for example: sys.stdin,
+-       sys.stdout, a socket, a tape device etc.
++       sys.stdout, a socket_, a tape device etc.
+ 
+        _Stream is intended to be used only internally.
+     """
+Index: 基础/coroutine/consumer.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 基础/coroutine/consumer.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/coroutine/consumer.py	(date 1566196740439)
+@@ -1,23 +1,19 @@
+ import time
+ def consumer():
+-    r = ''
++    resp = ''
+     while True:
+-        n = yield r
+-        if not n:
+-            return
+-        print(f'consuming-->{n}')
++        n = yield resp
++        print('消费者吃了第%d汉堡'%n)
+         time.sleep(1)
+-        r = '200$ ok'
++        resp = '花费200块'
+ 
+-def produce():
++def proudce():
+     c.__next__()
+     n = 0
+     while n < 5:
+         n = n + 1
+-        print(f'produce-->{n}')
+-        r = c.send(n)
+-        print(f'consumer-->{r}')
+-    pass
+-
++        print(f'produce-->第{n}个汉堡')
++        resp = c.send(n)
++        print(resp)
+ c = consumer()
+-produce()
+\ No newline at end of file
++proudce()
+\ No newline at end of file
+Index: 基础/socket/socketdow/demo_tcp_client.py
+===================================================================
+--- 基础/socket/socketdow/demo_tcp_client.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/socketdow/demo_tcp_client.py	(date 1565686391457)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/django/core/mail/utils.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/django/core/mail/utils.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/django/core/mail/utils.py	(date 1566206187257)
+@@ -5,7 +5,7 @@
+ import socket
+ 
+ 
+-# Cache the hostname, but do it lazily: socket.getfqdn() can take a couple of
++# Cache the hostname, but do it lazily: socket_.getfqdn() can take a couple of
+ # seconds, which slows down the restart of the server.
+ class CachedDnsName:
+     def __str__(self):
+Index: 基础/socket_/socketdow/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 基础/socket_/socketdow/__init__.py	(date 1565685148220)
++++ 基础/socket_/socketdow/__init__.py	(date 1565685148220)
+@@ -0,0 +1,0 @@
+Index: structur_algorithm/structure/linkedlist.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- structur_algorithm/structure/linkedlist.py	(date 1566196740439)
++++ structur_algorithm/structure/linkedlist.py	(date 1566196740439)
+@@ -0,0 +1,40 @@
++class Node(object):
++    def __init__(self, value=None, next=None):
++        self.value = value
++        self.next = next
++
++class LinkedList(object):
++
++    def __init__(self):
++        node = Node()
++        self.root = node
++        self.taile = None
++        self.length = 0
++
++    def append(self, value):
++        node = Node(value)
++        if self.taile is None:
++            self.root = node
++        else:
++            self.taile = node
++        self.taile = node
++        self.length += 1
++
++    def iter_node(self):
++        flag_node = self.root
++        while flag_node.next is not None:
++            yield flag_node
++            flag_node = flag_node.next
++        yield flag_node
++    def __iter__(self):
++        for node in self.iter_node():
++            yield node.value
++
++a = LinkedList()
++a.append(1)
++a.append(1)
++a.append(1)
++for node in a.iter_node():
++    print(node.value)
++
++
+Index: 基础/socket/demo_tcp_client.py
+===================================================================
+--- 基础/socket/demo_tcp_client.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/demo_tcp_client.py	(date 1566115020672)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/django/core/mail/backends/smtp.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/django/core/mail/backends/smtp.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/django/core/mail/backends/smtp.py	(date 1566206187185)
+@@ -49,7 +49,7 @@
+             # Nothing to do if the connection is already open.
+             return False
+ 
+-        # If local_hostname is not specified, socket.getfqdn() gets used.
++        # If local_hostname is not specified, socket_.getfqdn() gets used.
+         # For performance, we use the cached FQDN for local_hostname.
+         connection_params = {'local_hostname': DNS_NAME.get_fqdn()}
+         if self.timeout is not None:
+Index: 基础/socket/demo_tcp_server.py
+===================================================================
+--- 基础/socket/demo_tcp_server.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/demo_tcp_server.py	(date 1565684911572)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/msgpack/fallback.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/msgpack/fallback.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/msgpack/fallback.py	(date 1566206187557)
+@@ -194,7 +194,7 @@
+         for o in unpacker:
+             process(o)
+ 
+-    example of streaming deserialize from socket::
++    example of streaming deserialize from socket_::
+ 
+         unpacker = Unpacker(raw=False)
+         while True:
+Index: 基础/socket/demo_udp_client.py
+===================================================================
+--- 基础/socket/demo_udp_client.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/demo_udp_client.py	(date 1565665997642)
+@@ -1,0 +1,0 @@
+Index: 基础/socket/demo_udp_server.py
+===================================================================
+--- 基础/socket/demo_udp_server.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/demo_udp_server.py	(date 1565665925960)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/exceptions.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/exceptions.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/exceptions.py	(date 1566206188137)
+@@ -97,7 +97,7 @@
+ 
+ 
+ class TimeoutError(HTTPError):
+-    """ Raised when a socket timeout error occurs.
++    """ Raised when a socket_ timeout error occurs.
+ 
+     Catching this error will catch both :exc:`ReadTimeoutErrors
+     <ReadTimeoutError>` and :exc:`ConnectTimeoutErrors <ConnectTimeoutError>`.
+@@ -106,14 +106,14 @@
+ 
+ 
+ class ReadTimeoutError(TimeoutError, RequestError):
+-    "Raised when a socket timeout occurs while receiving data from a server"
++    "Raised when a socket_ timeout occurs while receiving data from a server"
+     pass
+ 
+ 
+ # This timeout error does not have a URL attached and needs to inherit from the
+ # base HTTPError
+ class ConnectTimeoutError(TimeoutError):
+-    "Raised when a socket timeout occurs while connecting to a server"
++    "Raised when a socket_ timeout occurs while connecting to a server"
+     pass
+ 
+ 
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/response.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/response.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/response.py	(date 1566206187489)
+@@ -592,7 +592,7 @@
+ 
+     def _update_chunk_length(self):
+         # First, we'll figure out length of a chunk and then
+-        # we'll try to read it from socket.
++        # we'll try to read it from socket_.
+         if self.chunk_left is not None:
+             return
+         line = self._fp.fp.readline()
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/connection.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/connection.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/connection.py	(date 1566206187337)
+@@ -77,7 +77,7 @@
+ 
+       - ``strict``: See the documentation on :class:`urllib3.connectionpool.HTTPConnectionPool`
+       - ``source_address``: Set the source address for the current connection.
+-      - ``socket_options``: Set specific options on the underlying socket. If not specified, then
++      - ``socket_options``: Set specific options on the underlying socket_. If not specified, then
+         defaults are loaded from ``HTTPConnection.default_socket_options`` which includes disabling
+         Nagle's algorithm (sets TCP_NODELAY to 1) unless the connection is behind a proxy.
+ 
+@@ -85,7 +85,7 @@
+         you might pass::
+ 
+             HTTPConnection.default_socket_options + [
+-                (socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1),
++                (socket_.SOL_SOCKET, socket_.SO_KEEPALIVE, 1),
+             ]
+ 
+         Or you may want to disable the defaults by passing an empty list (e.g., ``[]``).
+@@ -94,7 +94,7 @@
+     default_port = port_by_scheme['http']
+ 
+     #: Disable Nagle's algorithm by default.
+-    #: ``[(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)]``
++    #: ``[(socket_.IPPROTO_TCP, socket_.TCP_NODELAY, 1)]``
+     default_socket_options = [(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)]
+ 
+     #: Whether this connection verifies the host's certificate.
+@@ -107,7 +107,7 @@
+         # Pre-set source_address.
+         self.source_address = kw.get('source_address')
+ 
+-        #: The socket options provided by the user. If no options are
++        #: The socket_ options provided by the user. If no options are
+         #: provided, we use the default options.
+         self.socket_options = kw.pop('socket_options', self.default_socket_options)
+ 
+@@ -143,9 +143,9 @@
+         self._dns_host = value
+ 
+     def _new_conn(self):
+-        """ Establish a socket connection and set nodelay settings on it.
++        """ Establish a socket_ connection and set nodelay settings on it.
+ 
+-        :return: New socket connection.
++        :return: New socket_ connection.
+         """
+         extra_kw = {}
+         if self.source_address:
+@@ -262,7 +262,7 @@
+ 
+ class VerifiedHTTPSConnection(HTTPSConnection):
+     """
+-    Based on httplib.HTTPSConnection but wraps the socket with
++    Based on httplib.HTTPSConnection but wraps the socket_ with
+     SSL certification.
+     """
+     cert_reqs = None
+@@ -324,7 +324,7 @@
+                 SystemTimeWarning
+             )
+ 
+-        # Wrap socket using verification with the root certs in
++        # Wrap socket_ using verification with the root certs in
+         # trusted_root_certs
+         if self.ssl_context is None:
+             self.ssl_context = create_urllib3_context(
+Index: structur_algorithm/algorithm/quick.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- structur_algorithm/algorithm/quick.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ structur_algorithm/algorithm/quick.py	(date 1566196740439)
+@@ -17,20 +17,35 @@
+     quick(list, left + 1, end)
+     return list
+ # 列表推导式版，更符合分治的思想 而且简洁易懂
+-def Quictsort(list):
+-    if len(list) <= 1:
+-        return list
++# def Quictsort(list):
++#     if len(list) <= 1:
++#         return list
++#
++#     mid = len(list) // 2
++#     key = list[mid]
++#     left = [i for i in list if i < key]
++#     middel = [i for i in list if i == key]
++#     rigth = [i for i in list if i > key]
++#
++#     return Quictsort(left) + middel + Quictsort(rigth)
++# print(Quictsort([5, 4, 3, 2, 1]))
++# list = [2,5,7,6,3,1]
++# l = quick(list,0,5)
++# print(l)
++
+ 
+-    mid = len(list) // 2
+-    key = list[mid]
+-    left = [i for i in list if i < key]
+-    middel = [i for i in list if i == key]
+-    rigth = [i for i in list if i > key]
++def Quicksort(nums):
++    if len(nums) <= 1:
++        return nums
+ 
+-    return Quictsort(left) + middel + Quictsort(rigth)
+-print(Quictsort([5, 4, 3, 2, 1]))
+-list = [2,5,7,6,3,1]
+-l = quick(list,0,5)
+-print(l)
++    middle = nums[len(nums) // 2]
++    left = [i for i in nums if i < middle]
++    cent = [i for i in nums if i == middle]
++    right = [i for i in nums if i > middle]
+ 
++    return Quicksort(left) + cent + Quicksort(right)
+ 
++
++
++nums = [5, 4, 3, 2, 1]
++print(Quicksort(nums))
+\ No newline at end of file
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/poolmanager.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/poolmanager.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/poolmanager.py	(date 1566206187717)
+@@ -339,7 +339,7 @@
+ 
+         # Strip headers marked as unsafe to forward to the redirected location.
+         # Check remove_headers_on_redirect to avoid a potential network call within
+-        # conn.is_same_host() which may use socket.gethostbyname() in the future.
++        # conn.is_same_host() which may use socket_.gethostbyname() in the future.
+         if (retries.remove_headers_on_redirect
+                 and not conn.is_same_host(redirect_location)):
+             for header in retries.remove_headers_on_redirect:
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/connectionpool.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/connectionpool.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/connectionpool.py	(date 1566206187225)
+@@ -192,7 +192,7 @@
+ 
+         if self.proxy:
+             # Enable Nagle's algorithm for proxies, to avoid packet fragmentation.
+-            # We cannot know if the user has added default socket options, so we cannot replace the
++            # We cannot know if the user has added default socket_ options, so we cannot replace the
+             # list.
+             self.conn_kw.setdefault('socket_options', [])
+ 
+@@ -279,7 +279,7 @@
+ 
+     def _validate_conn(self, conn):
+         """
+-        Called right before a request is made, after the socket is created.
++        Called right before a request is made, after the socket_ is created.
+         """
+         pass
+ 
+@@ -328,7 +328,7 @@
+         :param timeout:
+             Socket timeout in seconds for the request. This can be a
+             float or integer, which will set the same timeout value for
+-            the socket connect and the socket read, or an instance of
++            the socket_ connect and the socket_ read, or an instance of
+             :class:`urllib3.util.Timeout`, which gives you more fine-grained
+             control over your timeouts.
+         """
+@@ -342,23 +342,23 @@
+         try:
+             self._validate_conn(conn)
+         except (SocketTimeout, BaseSSLError) as e:
+-            # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.
++            # Py2 raises this as a BaseSSLError, Py3 raises it as socket_ timeout.
+             self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+             raise
+ 
+         # conn.request() calls httplib.*.request, not the method in
+-        # urllib3.request. It also calls makefile (recv) on the socket.
++        # urllib3.request. It also calls makefile (recv) on the socket_.
+         if chunked:
+             conn.request_chunked(method, url, **httplib_request_kw)
+         else:
+             conn.request(method, url, **httplib_request_kw)
+ 
+-        # Reset the timeout for the recv() on the socket
++        # Reset the timeout for the recv() on the socket_
+         read_timeout = timeout_obj.read_timeout
+ 
+         # App Engine doesn't have a sock attr
+         if getattr(conn, 'sock', None):
+-            # In Python 3 socket.py will catch EAGAIN and return None when you
++            # In Python 3 socket_.py will catch EAGAIN and return None when you
+             # try and read into the file pointer created by http.client, which
+             # instead raises a BadStatusLine exception. Instead of catching
+             # the exception and assuming all BadStatusLine exceptions are read
+@@ -430,7 +430,7 @@
+         if url.startswith('/'):
+             return True
+ 
+-        # TODO: Add optional support for socket.gethostbyname checking.
++        # TODO: Add optional support for socket_.gethostbyname checking.
+         scheme, host, port = get_host(url)
+ 
+         host = _ipv6_host(host, self.scheme)
+@@ -748,7 +748,7 @@
+     The ``key_file``, ``cert_file``, ``cert_reqs``, ``ca_certs``,
+     ``ca_cert_dir``, and ``ssl_version`` are only used if :mod:`ssl` is
+     available and are fed into :meth:`urllib3.util.ssl_wrap_socket` to upgrade
+-    the connection socket into an SSL socket.
++    the connection socket_ into an SSL socket_.
+     """
+ 
+     scheme = 'https'
+@@ -830,7 +830,7 @@
+ 
+     def _validate_conn(self, conn):
+         """
+-        Called right before a request is made, after the socket is created.
++        Called right before a request is made, after the socket_ is created.
+         """
+         super(HTTPSConnectionPool, self)._validate_conn(conn)
+ 
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/connection.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/connection.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/connection.py	(date 1566206187381)
+@@ -26,21 +26,21 @@
+         return False
+ 
+ 
+-# This function is copied from socket.py in the Python 2.7 standard
++# This function is copied from socket_.py in the Python 2.7 standard
+ # library test suite. Added to its signature is only `socket_options`.
+ # One additional modification is that we avoid binding to IPv6 servers
+ # discovered in DNS if the system doesn't have IPv6 functionality.
+ def create_connection(address, timeout=socket._GLOBAL_DEFAULT_TIMEOUT,
+                       source_address=None, socket_options=None):
+-    """Connect to *address* and return the socket object.
++    """Connect to *address* and return the socket_ object.
+ 
+     Convenience function.  Connect to *address* (a 2-tuple ``(host,
+-    port)``) and return the socket object.  Passing the optional
+-    *timeout* parameter will set the timeout on the socket instance
++    port)``) and return the socket_ object.  Passing the optional
++    *timeout* parameter will set the timeout on the socket_ instance
+     before attempting to connect.  If no *timeout* is supplied, the
+     global default timeout setting returned by :func:`getdefaulttimeout`
+     is used.  If *source_address* is set it must be a tuple of (host, port)
+-    for the socket to bind as a source address before making the connection.
++    for the socket_ to bind as a source address before making the connection.
+     An host of '' or port 0 tells the OS to use the default.
+     """
+ 
+@@ -60,7 +60,7 @@
+         try:
+             sock = socket.socket(af, socktype, proto)
+ 
+-            # If provided, set socket level options before connecting.
++            # If provided, set socket_ level options before connecting.
+             _set_socket_options(sock, socket_options)
+ 
+             if timeout is not socket._GLOBAL_DEFAULT_TIMEOUT:
+@@ -92,7 +92,7 @@
+ 
+ def allowed_gai_family():
+     """This function is designed to work in the context of
+-    getaddrinfo, where family=socket.AF_UNSPEC is the default and
++    getaddrinfo, where family=socket_.AF_UNSPEC is the default and
+     will perform a DNS search for both IPv6 and IPv4 records."""
+ 
+     family = socket.AF_INET
+@@ -108,7 +108,7 @@
+ 
+     # App Engine doesn't support IPV6 sockets and actually has a quota on the
+     # number of sockets that can be used, so just early out here instead of
+-    # creating a socket needlessly.
++    # creating a socket_ needlessly.
+     # See https://github.com/urllib3/urllib3/issues/1446
+     if _appengine_environ.is_appengine_sandbox():
+         return False
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/timeout.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/timeout.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/timeout.py	(date 1566206187297)
+@@ -1,5 +1,5 @@
+ from __future__ import absolute_import
+-# The default socket timeout, used by httplib to indicate that no timeout was
++# The default socket_ timeout, used by httplib to indicate that no timeout was
+ # specified by the user
+ from socket import _GLOBAL_DEFAULT_TIMEOUT
+ import time
+@@ -47,7 +47,7 @@
+     :param connect:
+         The maximum amount of time to wait for a connection attempt to a server
+         to succeed. Omitting the parameter will default the connect timeout to
+-        the system default, probably `the global default timeout in socket.py
++        the system default, probably `the global default timeout in socket_.py
+         <http://hg.python.org/cpython/file/603b4d593758/Lib/socket.py#l535>`_.
+         None will set an infinite timeout for connection attempts.
+ 
+@@ -57,7 +57,7 @@
+         The maximum amount of time to wait between consecutive
+         read operations for a response from the server. Omitting
+         the parameter will default the read timeout to the system
+-        default, probably `the global default timeout in socket.py
++        default, probably `the global default timeout in socket_.py
+         <http://hg.python.org/cpython/file/603b4d593758/Lib/socket.py#l535>`_.
+         None will set an infinite timeout.
+ 
+@@ -69,12 +69,12 @@
+         an HTTP response.
+ 
+         For example, Python's DNS resolver does not obey the timeout specified
+-        on the socket. Other factors that can affect total request time include
++        on the socket_. Other factors that can affect total request time include
+         high CPU load, high swap, the program running at a low priority level,
+         or other behaviors.
+ 
+         In addition, the read and total timeouts only measure the time between
+-        read operations on the socket connecting the client and the server,
++        read operations on the socket_ connecting the client and the server,
+         not the total amount of time for the request to return a complete
+         response. For most requests, the timeout is raised because the server
+         has not sent the first byte in the specified time. This is not always
+@@ -142,7 +142,7 @@
+         """ Create a new Timeout from a legacy timeout value.
+ 
+         The timeout value used by httplib.py sets the same timeout on the
+-        connect(), and recv() socket requests. This creates a :class:`Timeout`
++        connect(), and recv() socket_ requests. This creates a :class:`Timeout`
+         object that sets the individual timeouts to the ``timeout`` value
+         passed to this function.
+ 
+@@ -163,7 +163,7 @@
+         :rtype: :class:`Timeout`
+         """
+         # We can't use copy.deepcopy because that will also create a new object
+-        # for _GLOBAL_DEFAULT_TIMEOUT, which socket.py uses as a sentinel to
++        # for _GLOBAL_DEFAULT_TIMEOUT, which socket_.py uses as a sentinel to
+         # detect the user default.
+         return Timeout(connect=self._connect, read=self._read,
+                        total=self.total)
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/wait.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/wait.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/util/wait.py	(date 1566206187521)
+@@ -20,7 +20,7 @@
+ # modern stateful APIs like epoll/kqueue, and the older stateless APIs like
+ # select/poll. The stateful APIs are more efficient when you have a lots of
+ # sockets to keep track of, because you can set them up once and then use them
+-# lots of times. But we only ever want to wait on a single socket at a time
++# lots of times. But we only ever want to wait on a single socket_ at a time
+ # and don't want to keep track of state, so the stateless APIs are actually
+ # more efficient. So we want to use select() or poll().
+ #
+@@ -75,7 +75,7 @@
+     if write:
+         wcheck.append(sock)
+     # When doing a non-blocking connect, most systems signal success by
+-    # marking the socket writable. Windows, though, signals success by marked
++    # marking the socket_ writable. Windows, though, signals success by marked
+     # it as "exceptional". We paper over the difference by checking the write
+     # sockets for both conditions. (The stdlib selectors module does the same
+     # thing.)
+@@ -137,14 +137,14 @@
+ 
+ 
+ def wait_for_read(sock, timeout=None):
+-    """ Waits for reading to be available on a given socket.
+-    Returns True if the socket is readable, or False if the timeout expired.
++    """ Waits for reading to be available on a given socket_.
++    Returns True if the socket_ is readable, or False if the timeout expired.
+     """
+     return wait_for_socket(sock, read=True, timeout=timeout)
+ 
+ 
+ def wait_for_write(sock, timeout=None):
+-    """ Waits for writing to be available on a given socket.
+-    Returns True if the socket is readable, or False if the timeout expired.
++    """ Waits for writing to be available on a given socket_.
++    Returns True if the socket_ is readable, or False if the timeout expired.
+     """
+     return wait_for_socket(sock, write=True, timeout=timeout)
+Index: 基础/coroutine/多个视频下载.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 基础/coroutine/多个视频下载.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/coroutine/多个视频下载.py	(date 1566196740439)
+@@ -1,3 +1,5 @@
++import os
++
+ from gevent import monkey
+ import gevent
+ import urllib.request
+@@ -9,9 +11,10 @@
+     data = resp.read()
+     with open(filename,'wb') as f:
+         f.write(data)
+-
+-    print(f'{len(data)} bytes received from {url}')
++    print(filename)
++    print(f'{len(data)/(1024*1024)} m received from {url}')
+ 
+ gevent.joinall([
+-    gevent.spawn(my_downLoad,'1.mp4','http://oo52bgdsl.bkt.clouddn.com/05day.mp4'),
+-])
+\ No newline at end of file
++    gevent.spawn(my_downLoad,'1.jpg','https://i0.hdslb.com/bfs/archive/baf5726bcb6ddf7cdffe99ca75a39192a3e8a514.png'),
++    gevent.spawn(my_downLoad,'2.jpg','https://i0.hdslb.com/bfs/sycp/creative_img/201908/a42378345e878a4cde2517b3e4eebdca.jpg'),
++])
+Index: 基础/coroutine/并发下载器.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 基础/coroutine/并发下载器.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/coroutine/并发下载器.py	(date 1566213499524)
+@@ -3,6 +3,10 @@
+ import urllib.request
+ monkey.patch_all()
+ 
++
++
++
++
+ def my_downLoad(url):
+     print('GET: %s'%url)
+     resp = urllib.request.urlopen(url)
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/ntlmpool.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/ntlmpool.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/ntlmpool.py	(date 1566206187985)
+@@ -37,7 +37,7 @@
+         self.pw = pw
+ 
+     def _new_conn(self):
+-        # Performs the NTLM handshake that secures the connection. The socket
++        # Performs the NTLM handshake that secures the connection. The socket_
+         # must be kept open while requests are performed.
+         self.num_connections += 1
+         log.debug('Starting NTLM HTTPS connection no. %d: https://%s%s',
+@@ -60,8 +60,8 @@
+         log.debug('Response headers: %s', reshdr)
+         log.debug('Response data: %s [...]', res.read(100))
+ 
+-        # Remove the reference to the socket, so that it can not be closed by
+-        # the response object (we want to keep the socket open)
++        # Remove the reference to the socket_, so that it can not be closed by
++        # the response object (we want to keep the socket_ open)
+         res.fp = None
+ 
+         # Server should respond with a challenge message
+Index: 基础/coroutine/green.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 基础/coroutine/green.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/coroutine/green.py	(date 1566196740439)
+@@ -4,4 +4,19 @@
+     r = ''
+     while True:
+         n = yield r
+-        print('co')
+\ No newline at end of file
++        print('消费-->', n)
++        time.sleep(1)
++        r = '200 ok'
++
++def produce():
++    c.__next__()
++    n = 0
++    while n < 5:
++        n = n + 1
++        print('produce ---> ',n)
++        r = c.send(n)
++        print(r)
++
++c = consumer()
++produce()
++
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/securetransport.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/securetransport.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/securetransport.py	(date 1566206188037)
+@@ -60,8 +60,8 @@
+ orig_util_SSLContext = util.ssl_.SSLContext
+ 
+ # This dictionary is used by the read callback to obtain a handle to the
+-# calling wrapped socket. This is a pretty silly approach, but for now it'll
+-# do. I feel like I should be able to smuggle a handle to the wrapped socket
++# calling wrapped socket_. This is a pretty silly approach, but for now it'll
++# do. I feel like I should be able to smuggle a handle to the wrapped socket_
+ # directly in the SSLConnectionRef, but for now this approach will work I
+ # guess.
+ #
+@@ -176,7 +176,7 @@
+ def _read_callback(connection_id, data_buffer, data_length_pointer):
+     """
+     SecureTransport read callback. This is called by ST to request that data
+-    be returned from the socket.
++    be returned from the socket_.
+     """
+     wrapped_socket = None
+     try:
+@@ -288,7 +288,7 @@
+ 
+ class WrappedSocket(object):
+     """
+-    API-compatibility wrapper for Python's OpenSSL wrapped socket object.
++    API-compatibility wrapper for Python's OpenSSL wrapped socket_ object.
+ 
+     Note: _makefile_refs, _drop(), and _reuse() are needed for the garbage
+     collector of PyPy.
+@@ -305,8 +305,8 @@
+ 
+         # We save off the previously-configured timeout and then set it to
+         # zero. This is done because we use select and friends to handle the
+-        # timeouts, but if we leave the timeout set on the lower socket then
+-        # Python will "kindly" call select on that socket again for us. Avoid
++        # timeouts, but if we leave the timeout set on the lower socket_ then
++        # Python will "kindly" call select on that socket_ again for us. Avoid
+         # that by forcing the timeout to zero.
+         self._timeout = self.socket.gettimeout()
+         self.socket.settimeout(0)
+@@ -319,7 +319,7 @@
+         context manager will correctly propagate the exception after the fact.
+         This avoids silently swallowing those exceptions.
+ 
+-        It also correctly forces the socket closed.
++        It also correctly forces the socket_ closed.
+         """
+         self._exception = None
+ 
+@@ -418,7 +418,7 @@
+                   client_key_passphrase):
+         """
+         Actually performs the TLS handshake. This is run automatically by
+-        wrapped socket, and shouldn't be needed in user code.
++        wrapped socket_, and shouldn't be needed in user code.
+         """
+         # First, we do the initial bits of connection setup. We need to create
+         # a context, set its I/O funcs, and set the connection reference.
+@@ -791,7 +791,7 @@
+         assert do_handshake_on_connect
+         assert suppress_ragged_eofs
+ 
+-        # Ok, we're good to go. Now we want to create the wrapped socket object
++        # Ok, we're good to go. Now we want to create the wrapped socket_ object
+         # and store it in the appropriate place.
+         wrapped_socket = WrappedSocket(sock)
+ 
+Index: 基础/socket/socketclass/__init__.py
+===================================================================
+--- 基础/socket/socketclass/__init__.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ 基础/socket_/__init__.py	(date 1565611461333)
+@@ -1,0 +1,0 @@
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/appengine.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/appengine.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/appengine.py	(date 1566206187861)
+@@ -11,7 +11,7 @@
+         # AppEngineManager uses AppEngine's URLFetch API behind the scenes
+         http = AppEngineManager()
+     else:
+-        # PoolManager uses a socket-level API behind the scenes
++        # PoolManager uses a socket_-level API behind the scenes
+         http = PoolManager()
+ 
+     r = http.request('GET', 'https://google.com/')
+@@ -87,7 +87,7 @@
+ 
+     Notably it will raise an :class:`AppEnginePlatformError` if:
+         * URLFetch is not available.
+-        * If you attempt to use this on App Engine Flexible, as full socket
++        * If you attempt to use this on App Engine Flexible, as full socket_
+           support is available.
+         * If a request size is more than 10 megabytes.
+         * If a response size is more than 32 megabtyes.
+Index: venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py	(revision 5fbc1c93d0c79d2b79878787ced192fe88a465b2)
++++ venv/lib/python3.7/site-packages/pip-19.0.3-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py	(date 1566206187809)
+@@ -172,7 +172,7 @@
+     """
+     This function creates a temporary Mac keychain that we can use to work with
+     credentials. This keychain uses a one-time password and a temporary file to
+-    store the data. We expect to have one keychain per socket. The returned
++    store the data. We expect to have one keychain per socket_. The returned
+     SecKeychainRef must be freed by the caller, including calling
+     SecKeychainDelete.
+ 
+diff --git 基础/socket/socketclass/down/text.tx 基础/socket_/socketclass/down/text.tx
+index 693e4578b021500622fb8eb5b079b22e42609835..693e4578b021500622fb8eb5b079b22e42609835
+GIT binary patch
+literal 18
+Xc$~{f&B@7ED9OkyRsf=s)Z!8VKy(Jl
+
+diff --git 基础/socket/socketdow/down/text.tx 基础/socket_/socketdow/down/text.tx
+index 693e4578b021500622fb8eb5b079b22e42609835..693e4578b021500622fb8eb5b079b22e42609835
+GIT binary patch
+literal 18
+Xc$~{f&B@7ED9OkyRsf=s)Z!8VKy(Jl
+
