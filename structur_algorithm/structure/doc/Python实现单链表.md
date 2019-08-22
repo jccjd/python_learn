@@ -154,6 +154,7 @@
 
 然后再将`curnode.next`指向`helpnode`, 
 
+
 `curnode` 赋值给`helpnode`，
 
 把存在`curnodenext`的节点在赋值给`curnode`,
