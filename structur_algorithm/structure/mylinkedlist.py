@@ -33,29 +33,50 @@ class LinkedList(object):
             self.tail.next = node
         self.tail = node
         self.length += 1
+    # def remove(self, index):
+    #     flagindex = 0
+    #     prenode = self.root
+    #     curnode = self.root.next
+    #     while curnode is not None:
+    #         if flagindex == index:
+    #             prenode.next = curnode.next
+    #             self.length -= 1
+    #             del curnode
+    #             return
+    #         prenode = prenode.next
+    #         curnode = curnode.next
+    #         flagindex += 1
+    # def find(self, index):
+    #     flagindex = 0
+    #     curnode = self.root.next
+    #     while curnode is not None:
+    #         if flagindex == index:
+    #             return curnode
+    #         curnode = curnode.next
+    #         flagindex += 1
 
     def remove(self, index):
         flagindex = 0
         prenode = self.root
 
         if index >= 0 and index <= self.length - 1:
-            for node in self.iterm_node():
+            for curnode in self.iterm_node():
                 if flagindex == index:
-                    prenode.next = node.next
+                    prenode.next = curnode.next
                     self.length -= 1
-                    del node
+                    del curnode
                 prenode = prenode.next
                 flagindex += 1
         else:
             raise Exception('out of range')
 
     def find(self, index):
-        flagindex = 0
+        prenode = 0
         if index >= 0 and index <= self.length - 1:
-            for node in self.iterm_node():
-                if flagindex == index:
-                    return node
-                flagindex += 1
+            for curnode in self.iterm_node():
+                if prenode == index:
+                    return curnode
+                prenode += 1
             return None
         else:
             raise Exception('out of range')
@@ -67,18 +88,29 @@ class LinkedList(object):
         else:
             raise Exception('the node is None')
 
+    # def reverse(self):
+    #     curnode = self.root.next
+    #     prenode = None
+    #     while curnode:
+    #         curnextnode = curnode.next
+    #         curnode.next = prenode
+    #         if curnextnode is None:
+    #             self.root.next = curnode
+    #         prenode = curnode
+    #         curnode = curnextnode
+
     def reverse(self):
-        tailnode = self.tail
         curnode = self.root.next
         prenode = None
         while curnode:
-            curnextnode = curnode.next
+            curnnodenext = curnode.next
             curnode.next = prenode
-            if curnextnode is None:
-                self.root.next = curnode
-            prenode = curnode
-            curnode = curnextnode
 
+            if curnnodenext is None:
+                self.root.next = curnode
+
+            prenode = curnode
+            curnode = curnnodenext
 
 class testLinkedlist():
 
@@ -122,5 +154,5 @@ test = testLinkedlist()
 test.testdate()
 test.testappend()
 test.testremove(1)
-test.testfind(2)
+test.testfind(0)
 test.testreverse()
