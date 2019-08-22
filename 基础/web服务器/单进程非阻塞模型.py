@@ -1,5 +1,6 @@
 import time
 from socket import *
+import select
 g_socket_list = list()
 def main():
     server_socket = socket(AF_INET, SOCK_STREAM)
