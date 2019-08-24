@@ -1,6 +1,0 @@
-### 常用命令
-
-**启动**
-
-    run redis : redis-cli redis-server
-    
