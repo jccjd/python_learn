@@ -61,4 +61,4 @@ class boo(metaclass=Singleton):
     pass
 f = boo()
 b = boo()
-print(f is b)
+

@@ -15,7 +15,7 @@ class ModelMetaclass(type):
 
         chiose = ((k, v) for k, v, in attrs.items() if not k.startswith('__'))
 
-        mappings = dict((k, v ) for k, v in chiose)
+        mappings = dict((k, v) for k, v in chiose)
 
         for k in mappings.keys():
             # 将类属性移除，使定义的类字段不污染User类属性，只在实例中可以访问这些key
@@ -25,26 +25,30 @@ class ModelMetaclass(type):
 
 
 # 三、编写Model基类
-class Model(dict,metaclass=ModelMetaclass):
+class Model(dict, metaclass=ModelMetaclass):
     def __init__(self, *args, **kwargs):
         super(Model, self).__init__(self, *args, **kwargs)
 
     def save(self):
         for k, v in self.__mappings__.items():
-            print(k,v)
+            print(k, v)
+
 
 # 最后，我们使用定义好的ORM接口，使用起来非常的简单。
 class User(Model):
     # 定义类的属性到列的映射：
 
     id = 'id'
-    name = ('username')
+    name = 'username'
     email = 'email2'
-    password = ('password')
+    password = 'password'
+
 
 class good(Model):
     id = 1
     good_name = 'hhh'
+
+
 good = good()
 good.save()
 # 创建一个实例：
