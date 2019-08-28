@@ -57,8 +57,6 @@ class Singleton(type):
             self._instance = super(Singleton, self).__call__(*args, **kwargs)
         return self._instance
 
-class boo(metaclass=Singleton):
-    pass
-f = boo()
-b = boo()
+u = User()
+u.save()
 
