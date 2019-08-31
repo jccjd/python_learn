@@ -19,5 +19,4 @@
 
     long@King:~/.ssh$ ssh -T git@github.com
     Hi jccjd! You've successfully authenticated, but GitHub does not provide shell access
-
         
