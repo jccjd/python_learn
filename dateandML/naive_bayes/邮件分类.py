@@ -63,8 +63,8 @@ def textParse(bigString):
 
 
 def spamTest():
-    docList = [];
-    classList = [];
+    docList = []
+    classList = []
     fullText = []
     for i in range(1, 26):
         wordList = textParse(open('spam/%d.txt' % i, 'r').read())

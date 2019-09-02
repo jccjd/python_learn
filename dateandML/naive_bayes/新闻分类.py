@@ -4,6 +4,7 @@ from sklearn.naive_bayes import MultinomialNB
 import matplotlib.pyplot as plt
 import jieba
 
+
 def TextProcessing(folder_path, test_size=0.2):
     folder_list = os.listdir(folder_path)
     data_list = []
@@ -55,6 +56,7 @@ def TextProcessing(folder_path, test_size=0.2):
     all_words_list = list(all_words_list)  # 转换成列表
     return all_words_list, train_data_list, test_data_list, train_class_list, test_class_list
 
+
 #
 def MakeWordsSet(words_file):
     words_set = set()
@@ -90,10 +92,12 @@ def words_dict(all_words_list, deleteN, stopwords_set=set()):
         n += 1
     return feature_words
 
+
 def TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list):
     classifier = MultinomialNB().fit(train_feature_list, train_class_list)
     test_accuracy = classifier.score(test_feature_list, test_class_list)
     return test_accuracy
+
 
 folder_path = './SogouC/Sample'  # 训练集存放地址
 all_words_list, train_data_list, test_data_list, train_class_list, test_class_list = TextProcessing(folder_path,
@@ -107,7 +111,6 @@ test_accuracy_list = []
 deleteNs = range(0, 1000, 20)  # 0 20 40 60 ... 980
 
 for deleteN in deleteNs:
-
     feature_words = words_dict(all_words_list, deleteN, stopwords_set)
     train_feature_list, test_feature_list = TextFeatures(train_data_list, test_data_list, feature_words)
     test_accuracy = TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list)
@@ -119,9 +122,15 @@ plt.title('Relationship of deleteNs and test_accuracy')
 plt.xlabel('deleteNs')
 plt.ylabel('test_accuracy')
 plt.show()
+
 feature_words = words_dict(all_words_list, 250, stopwords_set)
+
 train_feature_list, test_feature_list = TextFeatures(train_data_list, test_data_list, feature_words)
+
 test_accuracy = TextClassifier(train_feature_list, test_feature_list, train_class_list, test_class_list)
+
 test_accuracy_list.append(test_accuracy)
+
 ave = lambda c: sum(c) / len(c)
+
 print(ave(test_accuracy_list))

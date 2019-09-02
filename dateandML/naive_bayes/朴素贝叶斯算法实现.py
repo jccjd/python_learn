@@ -126,7 +126,7 @@ Parameters:
 	vec2Classify - 待分类的词条数组
 	p0Vec - 侮辱类的条件概率数组
 	p1Vec -非侮辱类的条件概率数组
-	pClass1 - 文档属于侮辱类的概率
+	pClass1 - 文档属于侮辱类的概率                                                                        
 Returns:
 	0 - 属于非侮辱类
 	1 - 属于侮辱类
