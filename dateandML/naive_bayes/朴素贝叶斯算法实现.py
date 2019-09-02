@@ -82,7 +82,7 @@ def setOfWords2Vec(vocabList, inputSet):
 
 """
 函数说明:朴素贝叶斯分类器训练函数
-
+naive bayes
 Parameters:
 	trainMatrix - 训练文档矩阵，即setOfWords2Vec返回的returnVec构成的矩阵
 	trainCategory - 训练类别标签向量，即loadDataSet返回的classVec
