@@ -1,4 +1,15 @@
 ### 所常用命令
+#### py2和py3和pip2和pip3
+在py2和py3 pip2 and pip3之间自由切换主要是软连接的切换
+    
+    
+    sudo apt-get install python3-pip  # 下载pip 
+    whereis python
+    ls -l /usr/bin | grep python
+    mv /usr/bin/python /usr/bin/python.bak
+    ln -s /usr/local/bin/python3 /usr/bin/python
+    
+
 `卸载软件包`
 
     sudo apt-get autoremove [packagename]   | 自动删除

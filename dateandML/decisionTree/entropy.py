@@ -1,23 +1,9 @@
-# -*- coding: UTF-8 -*-
 from matplotlib.font_manager import FontProperties
 import matplotlib.pyplot as plt
 from math import log
 import operator
 
-"""
-函数说明:计算给定数据集的经验熵(香农熵)
 
-Parameters:
-    dataSet - 数据集
-Returns:
-    shannonEnt - 经验熵(香农熵)
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def calcShannonEnt(dataSet):
     numEntires = len(dataSet)                        #返回数据集的行数
     labelCounts = {}                                #保存每个标签(Label)出现次数的字典
@@ -32,21 +18,7 @@ def calcShannonEnt(dataSet):
         shannonEnt -= prob * log(prob, 2)            #利用公式计算
     return shannonEnt                                #返回经验熵(香农熵)
 
-"""
-函数说明:创建测试数据集
 
-Parameters:
-    无
-Returns:
-    dataSet - 数据集
-    labels - 特征标签
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-20
-"""
 def createDataSet():
     dataSet = [[0, 0, 0, 0, 'no'],                        #数据集
             [0, 0, 0, 1, 'no'],
@@ -66,22 +38,7 @@ def createDataSet():
     labels = ['age', 'have work', 'house', 'Credit conditions']        #特征标签
     return dataSet, labels                             #返回数据集和分类属性
 
-"""
-函数说明:按照给定特征划分数据集
 
-Parameters:
-    dataSet - 待划分的数据集
-    axis - 划分数据集的特征
-    value - 需要返回的特征的值
-Returns:
-    无
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def splitDataSet(dataSet, axis, value):
     retDataSet = []                                        #创建返回的数据集列表
     for featVec in dataSet:                             #遍历数据集
@@ -91,20 +48,7 @@ def splitDataSet(dataSet, axis, value):
             retDataSet.append(reducedFeatVec)
     return retDataSet                                      #返回划分后的数据集
 
-"""
-函数说明:选择最优特征
 
-Parameters:
-    dataSet - 数据集
-Returns:
-    bestFeature - 信息增益最大的(最优)特征的索引值
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-20
-"""
 def chooseBestFeatureToSplit(dataSet):
     numFeatures = len(dataSet[0]) - 1                    #特征数量
     baseEntropy = calcShannonEnt(dataSet)                 #计算数据集的香农熵
@@ -127,20 +71,7 @@ def chooseBestFeatureToSplit(dataSet):
     return bestFeature                                             #返回信息增益最大的特征的索引值
 
 
-"""
-函数说明:统计classList中出现此处最多的元素(类标签)
 
-Parameters:
-    classList - 类标签列表
-Returns:
-    sortedClassCount[0][0] - 出现此处最多的元素(类标签)
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def majorityCnt(classList):
     classCount = {}
     for vote in classList:                                        #统计classList中每个元素出现的次数
@@ -149,22 +80,7 @@ def majorityCnt(classList):
     sortedClassCount = sorted(classCount.items(), key = operator.itemgetter(1), reverse = True)        #根据字典的值降序排序
     return sortedClassCount[0][0]                                #返回classList中出现次数最多的元素
 
-"""
-函数说明:创建决策树
 
-Parameters:
-    dataSet - 训练数据集
-    labels - 分类属性标签
-    featLabels - 存储选择的最优特征标签
-Returns:
-    myTree - 决策树
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-25
-"""
 def createTree(dataSet, labels, featLabels):
     classList = [example[-1] for example in dataSet]            #取分类标签(是否放贷:yes or no)
     if classList.count(classList[0]) == len(classList):            #如果类别完全相同则停止继续划分
@@ -182,20 +98,7 @@ def createTree(dataSet, labels, featLabels):
         myTree[bestFeatLabel][value] = createTree(splitDataSet(dataSet, bestFeat, value), labels, featLabels)
     return myTree
 
-"""
-函数说明:获取决策树叶子结点的数目
 
-Parameters:
-    myTree - 决策树
-Returns:
-    numLeafs - 决策树的叶子结点的数目
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def getNumLeafs(myTree):
     numLeafs = 0                                                #初始化叶子
     firstStr = next(iter(myTree))                                #python3中myTree.keys()返回的是dict_keys,不在是list,所以不能使用myTree.keys()[0]的方法获取结点属性，可以使用list(myTree.keys())[0]
@@ -206,20 +109,7 @@ def getNumLeafs(myTree):
         else:   numLeafs +=1
     return numLeafs
 
-"""
-函数说明:获取决策树的层数
 
-Parameters:
-    myTree - 决策树
-Returns:
-    maxDepth - 决策树的层数
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def getTreeDepth(myTree):
     maxDepth = 0                                                #初始化决策树深度
     firstStr = next(iter(myTree))                                #python3中myTree.keys()返回的是dict_keys,不在是list,所以不能使用myTree.keys()[0]的方法获取结点属性，可以使用list(myTree.keys())[0]
@@ -231,23 +121,7 @@ def getTreeDepth(myTree):
         if thisDepth > maxDepth: maxDepth = thisDepth            #更新层数
     return maxDepth
 
-"""
-函数说明:绘制结点
 
-Parameters:
-    nodeTxt - 结点名
-    centerPt - 文本位置
-    parentPt - 标注的箭头位置
-    nodeType - 结点格式
-Returns:
-    无
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
     arrow_args = dict(arrowstyle="<-")                                            #定义箭头格式
     font = FontProperties(size=14)
@@ -255,42 +129,11 @@ def plotNode(nodeTxt, centerPt, parentPt, nodeType):
         xytext=centerPt, textcoords='axes fraction',
         va="center", ha="center", bbox=nodeType, arrowprops=arrow_args, FontProperties=font)
 
-"""
-函数说明:标注有向边属性值
 
-Parameters:
-    cntrPt、parentPt - 用于计算标注位置
-    txtString - 标注的内容
-Returns:
-    无
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def plotMidText(cntrPt, parentPt, txtString):
     xMid = (parentPt[0]-cntrPt[0])/2.0 + cntrPt[0]                                            #计算标注位置
     yMid = (parentPt[1]-cntrPt[1])/2.0 + cntrPt[1]
     createPlot.ax1.text(xMid, yMid, txtString, va="center", ha="center", rotation=30)
-
-"""
-函数说明:绘制决策树
-
-Parameters:
-    myTree - 决策树(字典)
-    parentPt - 标注的内容
-    nodeTxt - 结点名
-Returns:
-    无
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def plotTree(myTree, parentPt, nodeTxt):
     decisionNode = dict(boxstyle="sawtooth", fc="0.8")                                        #设置结点格式
     leafNode = dict(boxstyle="round4", fc="0.8")                                            #设置叶结点格式
@@ -311,20 +154,7 @@ def plotTree(myTree, parentPt, nodeTxt):
             plotMidText((plotTree.xOff, plotTree.yOff), cntrPt, str(key))
     plotTree.yOff = plotTree.yOff + 1.0/plotTree.totalD
 
-"""
-函数说明:创建绘制面板
 
-Parameters:
-    inTree - 决策树(字典)
-Returns:
-    无
-Author:
-    Jack Cui
-Blog:
-    http://blog.csdn.net/c406495762
-Modify:
-    2017-07-24
-"""
 def createPlot(inTree):
     fig = plt.figure(1, facecolor='white')                                                    #创建fig
     fig.clf()                                                                                #清空fig
