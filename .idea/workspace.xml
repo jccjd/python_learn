@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55d56913-9bc2-4b90-b3f1-b3fcf9c5d3c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/基础/day1/hello/work5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/Deep_Neural_Network.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/datasets/test_catvnoncat.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/datasets/train_catvnoncat.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据结构和算法/demoqueue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数据结构和算法/demostack.py" afterDir="false" />
+    <list default="true" id="55d56913-9bc2-4b90-b3f1-b3fcf9c5d3c5" name="Default Changelist" comment="process">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础/day1/hello/work4.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/day1/hello/work4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构和算法/array_and_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构和算法/array_and_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据结构和算法/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/数据结构和算法/linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dateandML/tensor_note/rnndemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/dateandML/tensor_note/rnndemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/doc/垃圾回收GC.md" beforeDir="false" afterPath="$PROJECT_DIR$/基础/doc/垃圾回收GC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/doc/正则表达式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/doc/线程.MD" beforeDir="false" afterPath="$PROJECT_DIR$/基础/doc/线程.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,36 +15,81 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="python_learn" />
+  </component>
   <component name="FileColors">
-    <fileColor scope="Tests" color="0c3118" />
-    <fileColor scope="Local Unit Tests" color="0c3118" />
-    <fileColor scope="Android Instrumented Tests" color="0c3118" />
+    <fileColor scope="Tests" color="0f2a00" />
+    <fileColor scope="Local Unit Tests" color="0f2a00" />
+    <fileColor scope="Android Instrumented Tests" color="0f2a00" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/数据结构和算法/demostack.py">
+        <entry file="file://$PROJECT_DIR$/dateandML/docs/决策树.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="192">
+                <caret line="7" selection-start-line="7" selection-end-line="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/Variable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="24">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/rnndemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/demominist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/doc/note_base.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="144">
+                <caret line="144" column="4" selection-start-line="144" selection-start-column="4" selection-end-line="144" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/数据结构和算法/demoqueue.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/数据结构和算法/array_and_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <entry file="file://$PROJECT_DIR$/dateandML/docs/贝叶斯分类器.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="81">
+                <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -66,84 +105,100 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>app_</find>
-      <find>multinomial</find>
+      <find>init_op</find>
+      <find>find</find>
+      <find>apt</find>
+      <find>class=</find>
+      <find>pl2</find>
+      <find>魔童</find>
+      <find>celebrity</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django-polls/setup.py" />
-        <option value="$PROJECT_DIR$/django-polls/MANIFEST.in" />
-        <option value="$PROJECT_DIR$/djangoDemo/djangoDemo/urls.py" />
-        <option value="$PROJECT_DIR$/PY数据结构和算法/sort3.py" />
-        <option value="$PROJECT_DIR$/PY数据结构和算法/fibnq.py" />
-        <option value="$PROJECT_DIR$/PY数据结构和算法/quick.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/numpy/code/Numpy神经网络.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/numpy/code/bagging.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/numpy/code/ImageToChar.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/numpy/code/archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/经典算法/Doc/有监督学习和无监督学习.MD" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/Doc/有监督学习和无监督学习.MD" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/Doc/线性回归和非线性回归.MD" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/Doc/模型评估.MD" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/Doc/线性回归.MD" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/Doc/costfunction.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/梯度下降法的一元分类.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/sklearn一元线性回归.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-2/code/sklearn_多项式回归.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/sklearn_多项式回归.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/quick.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/二分查找.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/numpy/Doc/numpyDOC.MD" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/numpy/code/numpyDemo.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/TestFunction.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/多元线性回归.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/housing_regssion.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/线性回归标准方程法.py" />
-        <option value="$PROJECT_DIR$/基础/day1/hello/work2.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/test.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/梯度下降法_逻辑回归.py" />
-        <option value="$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/sklearn逻辑.py" />
-        <option value="D:/Python37/Lib/site-packages/sklearn/linear_model/logistic.py" />
-        <option value="$PROJECT_DIR$/reviewPython/理解元类.MD" />
-        <option value="$PROJECT_DIR$/基础/day1/hello/work3.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/回文数字.py" />
-        <option value="$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1201333238/builtins.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/LinkListDemo.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/double_link_list.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/demodoublelinklist.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/sort3.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/sort1.py" />
-        <option value="$PROJECT_DIR$/基础/day1/hello/work4.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/linked_list.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/doc/queue.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/init.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/queue.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/array_and_list.py" />
-        <option value="$PROJECT_DIR$/基础/day1/hello/work5.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/demoqueue.py" />
-        <option value="$PROJECT_DIR$/数据结构和算法/demostack.py" />
+        <option value="$PROJECT_DIR$/基础/coroutine/green.py" />
+        <option value="$PROJECT_DIR$/基础/coroutine/多个视频下载.py" />
+        <option value="$PROJECT_DIR$/基础/coroutine/consumer.py" />
+        <option value="$PROJECT_DIR$/基础/music_list.txt" />
+        <option value="$PROJECT_DIR$/基础/Nest.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/structure/mylinkedlist.py" />
+        <option value="$PROJECT_DIR$/基础/正则式.py" />
+        <option value="$PROJECT_DIR$/基础/topmove.txt" />
+        <option value="$PROJECT_DIR$/基础/backmydog.html" />
+        <option value="$PROJECT_DIR$/基础/coroutine/并发下载器.py" />
+        <option value="$PROJECT_DIR$/基础/getnetimage.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/algorithm/bubble_sort.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/algorithm/fibnq.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/algorithm/sort1.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/algorithm/insertsort.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/algorithm/quick.py" />
+        <option value="$PROJECT_DIR$/structur_algorithm/algorithm/merge_sort.py" />
+        <option value="$PROJECT_DIR$/基础/web服务器/epoll.py" />
+        <option value="$PROJECT_DIR$/基础/web服务器/单进程非阻塞模型.py" />
+        <option value="$PROJECT_DIR$/基础/web服务器/IO复用模型.py" />
+        <option value="$PROJECT_DIR$/基础/web服务器/demo_tcp_client.py" />
+        <option value="$PROJECT_DIR$/基础/web服务器/demo_tcp_client1.py" />
+        <option value="$PROJECT_DIR$/基础/web服务器/docs/IO五种模型.md" />
+        <option value="$PROJECT_DIR$/基础/web服务器/asynchronous_io.py" />
+        <option value="$PROJECT_DIR$/dateandML/linerRegartion/doc/模型评估.MD" />
+        <option value="$PROJECT_DIR$/dateandML/linerRegartion/梯度下降法的一元分类.py" />
+        <option value="$PROJECT_DIR$/dateandML/Coursera-Machine-Learning/week-2/多变量线性回归.MD" />
+        <option value="$PROJECT_DIR$/dateandML/docs/模型评估.MD" />
+        <option value="$PROJECT_DIR$/importent/orm.py" />
+        <option value="$PROJECT_DIR$/reviewPython/doc/闭包.MD" />
+        <option value="$PROJECT_DIR$/reviewPython/demometaclss.py" />
+        <option value="$PROJECT_DIR$/reviewPython/Singleton-1.py" />
+        <option value="$PROJECT_DIR$/linux/mysqDOC.MD" />
+        <option value="$PROJECT_DIR$/reviewPython/orm.py" />
+        <option value="$PROJECT_DIR$/reviewPython/orm-1.py" />
+        <option value="$PROJECT_DIR$/linux/use_git_doc.md" />
+        <option value="$PROJECT_DIR$/linux/linux下配置git.md" />
+        <option value="$PROJECT_DIR$/reviewPython/connmysql.py" />
+        <option value="$PROJECT_DIR$/dateandML/decisionTree/entropy.py" />
+        <option value="$PROJECT_DIR$/dateandML/decisionTree/savetree.py" />
+        <option value="$PROJECT_DIR$/dateandML/decisionTree/usetree.py" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/转换单词向量.py" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/spam/17-1.txt" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/邮件分类-1.py" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/邮件分类.py" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/新闻分类.py" />
+        <option value="$PROJECT_DIR$/dateandML/docs/贝叶斯分类器.md" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/朴素贝叶斯算法实现.py" />
+        <option value="$PROJECT_DIR$/dateandML/naive_bayes/__init__.py" />
+        <option value="$PROJECT_DIR$/基础/doc/垃圾回收GC.md" />
+        <option value="$PROJECT_DIR$/dateandML/tensor_note/rnndemo.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <showMembers ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/pycode/python_learn" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,88 +209,18 @@
             <path>
               <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="importent" type="462c0819:PsiDirectoryNode" />
+              <item name="dateandML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="reviewPython" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="reviewPython" type="462c0819:PsiDirectoryNode" />
-              <item name="demometaclss.py" type="8704e2dd:PyFileNode" />
+              <item name="dateandML" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_learn" type="462c0819:PsiDirectoryNode" />
               <item name="基础" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="基础" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="基础" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="数据结构和算法" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="数据结构和算法" type="462c0819:PsiDirectoryNode" />
-              <item name="array_and_list.py" type="8704e2dd:PyFileNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="数据结构和算法" type="462c0819:PsiDirectoryNode" />
-              <item name="array_and_list.py" type="8704e2dd:PyFileNode" />
-              <item name="Array" type="dd8bbb05:PyElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="基础" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="基础" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="day1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="基础" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="day1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="hello" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python_learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="数据结构和算法" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -246,24 +231,25 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dateandML/naive_bayes" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\code\python_learn\基础\day1\hello" />
-      <recent name="D:\code\python_learn\数据分析和机器学习\机器学习算法基础\neuralnetwork" />
-      <recent name="D:\code\python_learn\数据分析和机器学习\机器学习算法基础\线性回归" />
-      <recent name="D:\code\python_learn\数据结构和算法" />
-      <recent name="D:\code\python_learn\数据分析和机器学习\机器学习算法基础\线性回归\doc" />
+      <recent name="$PROJECT_DIR$/dateandML/naive_bayes" />
+      <recent name="$PROJECT_DIR$/dateandML/naive_bayes/ham" />
+      <recent name="$PROJECT_DIR$/dateandML/naive_bayes/spam" />
+      <recent name="$PROJECT_DIR$/reviewPython" />
+      <recent name="$PROJECT_DIR$/dateandML/Coursera-Machine-Learning/week-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\python_learn\数据结构和算法" />
-      <recent name="D:\code\python_learn\数据分析和机器学习\机器学习算法基础\线性回归" />
-      <recent name="D:\code\python_learn\数据分析和机器学习\机器学习算法基础\Doc" />
-      <recent name="D:\code\python_learn\数据分析和机器学习\机器学习算法基础" />
-      <recent name="D:\code\python_learn\数据结构和算法\doc" />
+      <recent name="$PROJECT_DIR$/reviewPython" />
+      <recent name="$PROJECT_DIR$/reviewPython/doc" />
+      <recent name="$PROJECT_DIR$/dateandML/docs" />
+      <recent name="$PROJECT_DIR$/基础/web服务器/docs" />
+      <recent name="$PROJECT_DIR$/基础/image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,8 +264,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demostack">
-    <configuration name="Deep_Neural_Network" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Variable">
+    <configuration name="邮件分类-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,11 +273,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dateandML/naive_bayes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/Deep_Neural_Network.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dateandML/naive_bayes/邮件分类-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,7 +286,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="array_and_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="转换单词向量" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,11 +294,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据结构和算法" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dateandML/naive_bayes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据结构和算法/array_and_list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dateandML/naive_bayes/朴素贝叶斯算法实现.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -321,7 +307,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demoqueue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="装饰器" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,11 +315,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据结构和算法" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基础" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据结构和算法/demoqueue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基础/装饰器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -342,7 +328,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demostack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Variable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -350,11 +336,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据结构和算法" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dateandML/tensor_note" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据结构和算法/demostack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dateandML/tensor_note/Variable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,7 +349,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="work5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="邮件分类" type="PythonConfigurationType" factoryName="Python">
       <module name="python_learn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -371,11 +357,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/基础/day1/hello" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dateandML/naive_bayes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基础/day1/hello/work5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dateandML/naive_bayes/邮件分类.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -384,13 +370,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="新闻分类" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dateandML/naive_bayes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dateandML/naive_bayes/新闻分类.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="usetree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_learn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dateandML/decisionTree" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dateandML/decisionTree/usetree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.usetree" />
+      <item itemvalue="Python.转换单词向量" />
+      <item itemvalue="Python.邮件分类-1" />
+      <item itemvalue="Python.装饰器" />
+      <item itemvalue="Python.Variable" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demostack" />
-        <item itemvalue="Python.demoqueue" />
-        <item itemvalue="Python.work5" />
-        <item itemvalue="Python.Deep_Neural_Network" />
-        <item itemvalue="Python.array_and_list" />
+        <item itemvalue="Python.Variable" />
+        <item itemvalue="Python.装饰器" />
+        <item itemvalue="Python.邮件分类-1" />
+        <item itemvalue="Python.转换单词向量" />
+        <item itemvalue="Python.usetree" />
       </list>
     </recent_temporary>
   </component>
@@ -404,97 +439,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552049518597</updated>
-    </task>
-    <task id="LOCAL-00001" summary="字符串常见操作">
-      <created>1552124844106</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1552124844106</updated>
-    </task>
-    <task id="LOCAL-00002" summary="改名">
-      <created>1552190436403</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1552190436403</updated>
-    </task>
-    <task id="LOCAL-00003" summary="find">
-      <created>1552311471110</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1552311471110</updated>
-    </task>
-    <task id="LOCAL-00004" summary="replace">
-      <created>1552736199029</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1552736199029</updated>
-    </task>
-    <task id="LOCAL-00005" summary="名字管理">
-      <created>1553172890282</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1553172890282</updated>
-    </task>
-    <task id="LOCAL-00006" summary="名字管理">
-      <created>1553173909804</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1553173909804</updated>
-    </task>
-    <task id="LOCAL-00007" summary="包，模块">
-      <created>1553305955335</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1553305955335</updated>
-    </task>
-    <task id="LOCAL-00008" summary="包，模块">
-      <created>1557830256184</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1557830256185</updated>
-    </task>
-    <task id="LOCAL-00009" summary="number">
-      <created>1557835380134</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1557835380134</updated>
-    </task>
-    <task id="LOCAL-00010" summary="number">
-      <created>1560419805833</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1560419805833</updated>
-    </task>
-    <task id="LOCAL-00011" summary="number">
-      <created>1560426641959</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1560426641959</updated>
-    </task>
-    <task id="LOCAL-00012" summary="number">
-      <created>1560586820993</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1560586820993</updated>
-    </task>
-    <task id="LOCAL-00013" summary="number">
-      <created>1560771317804</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1560771317804</updated>
     </task>
     <task id="LOCAL-00014" summary="number">
       <created>1560773363055</created>
@@ -567,96 +511,329 @@
       <updated>1562902607851</updated>
     </task>
     <task id="LOCAL-00024" summary="reviewpython">
-      <created>1563858186525</created>
+      <created>1563776447304</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1563858186526</updated>
+      <updated>1563776447304</updated>
     </task>
     <task id="LOCAL-00025" summary="reviewpython">
-      <created>1564034916768</created>
+      <created>1563776496890</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1564034916769</updated>
+      <updated>1563776496890</updated>
     </task>
     <task id="LOCAL-00026" summary="reviewpython">
-      <created>1564034942639</created>
+      <created>1563776508499</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1564034942639</updated>
+      <updated>1563776508499</updated>
     </task>
-    <task id="LOCAL-00027" summary="reviewpython">
-      <created>1564119559915</created>
+    <task id="LOCAL-00027" summary="change file path">
+      <created>1564738833147</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1564119559915</updated>
+      <updated>1564738833147</updated>
     </task>
-    <task id="LOCAL-00028" summary="reviewpython">
-      <created>1564218416782</created>
+    <task id="LOCAL-00028" summary="just update">
+      <created>1565054632593</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1564218416782</updated>
+      <updated>1565054632593</updated>
     </task>
-    <task id="LOCAL-00029" summary="reviewpython">
-      <created>1564292474380</created>
+    <task id="LOCAL-00029" summary="just update">
+      <created>1565188670421</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1564292474380</updated>
+      <updated>1565188670421</updated>
     </task>
-    <task id="LOCAL-00030" summary="reviewpython">
-      <created>1564400799339</created>
+    <task id="LOCAL-00030" summary="just update">
+      <created>1565244320712</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1564400799339</updated>
+      <updated>1565244320712</updated>
     </task>
-    <task id="LOCAL-00031" summary="reviewpython">
-      <created>1564407859910</created>
+    <task id="LOCAL-00031" summary="just update">
+      <created>1565244454650</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1564407859910</updated>
+      <updated>1565244454650</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="just update">
+      <created>1565244491121</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1565244491121</updated>
+    </task>
+    <task id="LOCAL-00033" summary="just update">
+      <created>1565244703907</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1565244703907</updated>
+    </task>
+    <task id="LOCAL-00034" summary="linux comd">
+      <created>1565317346849</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1565317346849</updated>
+    </task>
+    <task id="LOCAL-00035" summary="linux comd">
+      <created>1565322515481</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1565322515481</updated>
+    </task>
+    <task id="LOCAL-00036" summary="linux base">
+      <created>1565348138128</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1565348138128</updated>
+    </task>
+    <task id="LOCAL-00037" summary="network base">
+      <created>1565350874548</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1565350874548</updated>
+    </task>
+    <task id="LOCAL-00038" summary="network base">
+      <created>1565425341586</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1565425341586</updated>
+    </task>
+    <task id="LOCAL-00039" summary="network base">
+      <created>1565446140396</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1565446140396</updated>
+    </task>
+    <task id="LOCAL-00040" summary="network base">
+      <created>1565569783238</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1565569783238</updated>
+    </task>
+    <task id="LOCAL-00041" summary="udp tcp">
+      <created>1565660595924</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1565660595925</updated>
+    </task>
+    <task id="LOCAL-00042" summary="udp tcp">
+      <created>1565674918906</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1565674918907</updated>
+    </task>
+    <task id="LOCAL-00043" summary="udp tcp">
+      <created>1565685098300</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1565685098300</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Process and Thread">
+      <created>1565837216323</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1565837216323</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Process and Thread">
+      <created>1565857443519</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1565857443519</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Process and Thread">
+      <created>1565920334308</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1565920334308</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Thread detail">
+      <created>1565922332835</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1565922332835</updated>
+    </task>
+    <task id="LOCAL-00048" summary="process">
+      <created>1565944089912</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1565944089912</updated>
+    </task>
+    <task id="LOCAL-00049" summary="process">
+      <created>1565962771184</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1565962771184</updated>
+    </task>
+    <task id="LOCAL-00050" summary="process">
+      <created>1566223232579</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1566223232579</updated>
+    </task>
+    <task id="LOCAL-00051" summary="process">
+      <created>1566223251522</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1566223251522</updated>
+    </task>
+    <task id="LOCAL-00052" summary="process">
+      <created>1566300802493</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1566300802493</updated>
+    </task>
+    <task id="LOCAL-00053" summary="process">
+      <created>1566487637984</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1566487637984</updated>
+    </task>
+    <task id="LOCAL-00054" summary="setting SSH">
+      <created>1566526808835</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1566526808836</updated>
+    </task>
+    <task id="LOCAL-00055" summary="I/O模型">
+      <created>1566643197083</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1566643197083</updated>
+    </task>
+    <task id="LOCAL-00056" summary="machine leaning 模型评估">
+      <created>1566822790937</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1566822790940</updated>
+    </task>
+    <task id="LOCAL-00057" summary="调整文档">
+      <created>1566984492426</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1566984492427</updated>
+    </task>
+    <task id="LOCAL-00058" summary="delete some file">
+      <created>1566984767911</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1566984767911</updated>
+    </task>
+    <task id="LOCAL-00059" summary="change name">
+      <created>1566985807782</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1566985807782</updated>
+    </task>
+    <task id="LOCAL-00060" summary="贝叶斯分类">
+      <created>1567249826769</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1567249826769</updated>
+    </task>
+    <task id="LOCAL-00061" summary="orm">
+      <created>1567384022357</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1567384022357</updated>
+    </task>
+    <task id="LOCAL-00062" summary="垃圾回收">
+      <created>1567668621480</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1567668621481</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="26" width="1366" height="742" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3152401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49705014" visible="true" weight="0.18228404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.50074077" side_tool="true" weight="0.3045388" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992658" visible="true" weight="0.2444219" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38640973" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32448378" />
+      <window_info anchor="bottom" x="557" y="119" width="788" height="610" id="Run" order="2" sideWeight="0.5080527" side_tool="true" visible="true" weight="0.35693216" />
+      <window_info anchor="bottom" x="356" y="270" width="875" height="468" id="Debug" order="3" sideWeight="0.4919473" weight="0.35693216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32911393" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27991885" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007342" side_tool="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32977098" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50208336" side_tool="true" weight="0.26533744" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32890856" />
       <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32982844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="790" y="401" width="295" height="584" id="Documentation" order="3" side_tool="true" type="FLOATING" weight="0.329429" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49705014" visible="true" weight="0.17862372" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.50074077" side_tool="true" weight="0.3045388" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32448378" />
+      <window_info anchor="bottom" x="557" y="119" width="788" height="610" id="Run" order="2" sideWeight="0.5080527" side_tool="true" weight="0.35693216" />
+      <window_info anchor="bottom" x="356" y="270" width="875" height="468" id="Debug" order="3" sideWeight="0.4919473" weight="0.35693216" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50208336" side_tool="true" weight="0.26533744" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32890856" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.32982844" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_PATCH_IN_EXPLORER" value="true" />
-    <MESSAGE value="字符串常见操作" />
-    <MESSAGE value="改名" />
     <MESSAGE value="find" />
     <MESSAGE value="replace" />
     <MESSAGE value="名字管理" />
@@ -664,220 +841,374 @@
     <MESSAGE value="number" />
     <MESSAGE value="single" />
     <MESSAGE value="reviewpython" />
-    <option name="LAST_COMMIT_MESSAGE" value="reviewpython" />
+    <MESSAGE value="change file path" />
+    <MESSAGE value="just update" />
+    <MESSAGE value="linux comd" />
+    <MESSAGE value="linux base" />
+    <MESSAGE value="network base" />
+    <MESSAGE value="udp tcp" />
+    <MESSAGE value="Process and Thread" />
+    <MESSAGE value="Thread detail" />
+    <MESSAGE value="process" />
+    <MESSAGE value="setting SSH" />
+    <MESSAGE value="I/O模型" />
+    <MESSAGE value="machine leaning 模型评估" />
+    <MESSAGE value="调整文档" />
+    <MESSAGE value="delete some file" />
+    <MESSAGE value="change name" />
+    <MESSAGE value="贝叶斯分类" />
+    <MESSAGE value="orm" />
+    <MESSAGE value="垃圾回收" />
+    <option name="LAST_COMMIT_MESSAGE" value="垃圾回收" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/线性回归/housing_regssion.py</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/基础/socket_/socketclass/clientflie.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/structur_algorithm/algorithm/quick.py</url>
+          <line>20</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/reviewPython/demometaclss.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/基础/web服务器/IO复用模型.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/基础/day1/hello/work4.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/数据结构和算法/array_and_list.py</url>
+          <url>file://$PROJECT_DIR$/基础/web服务器/demo_tcp_client.py</url>
           <line>8</line>
-          <option name="timeStamp" value="40" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/数据结构和算法/array_and_list.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="41" />
+          <url>file://$PROJECT_DIR$/基础/web服务器/单进程非阻塞模型.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/reviewPython/orm.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/decisionTree/entropy.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/decisionTree/entropy.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/decisionTree/savetree.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/decisionTree/usetree.py</url>
+          <line>227</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/decisionTree/usetree.py</url>
+          <line>230</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/naive_bayes/朴素贝叶斯算法实现.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/naive_bayes/朴素贝叶斯算法实现.py</url>
+          <line>142</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/naive_bayes/邮件分类.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/naive_bayes/新闻分类.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dateandML/naive_bayes/新闻分类.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="pixels[i][j]" />
-        <watch expression="chars[pixels[i][j] // step]" />
-        <watch expression="y" />
-        <watch expression="left" />
-        <watch expression="node" />
-        <watch expression="length" />
-        <watch expression="newstr" />
-        <watch expression="str" />
-        <watch expression="newarray[i]" />
-        <watch expression="self.item[i]" />
-        <watch expression="len(self.item)" />
-        <watch expression="newarray[key]" />
-        <watch expression="len(self.item)" />
-        <watch expression="len(self.item)" />
-        <watch expression="self.size" />
-        <watch expression="self.size" />
-        <watch expression="newarray[i]" />
-        <watch expression="newarray" />
-        <watch expression="newarray" />
-        <watch expression="self.item[key]" />
+        <watch expression="id(x)" />
+        <watch expression="n" />
+        <watch expression="v" />
+        <watch expression="featValues" />
+        <watch expression="myTree" />
+        <watch expression="myTree1" />
+        <watch expression="sum(trainCategory)" />
+        <watch expression="bigString" />
       </configuration>
     </watches-manager>
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>i</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/梯度_非逻辑线性回归.py">
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/spam/16.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/spam/17.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="312">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/ham/5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/ham/6-1.txt" />
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/ham/7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/ham/6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/ham/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/邮件分类-1.py" />
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/SogouC/Sample/C000008/10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10896">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/posixpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/SogouC/ClassList.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/stopwords_cn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/新闻分类.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviewPython/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/邮件分类.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2136">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/模型评估.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2808">
+            <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/朴素贝叶斯算法实现.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="138" column="3" selection-start-line="138" selection-start-column="3" selection-end-line="138" selection-end-column="3" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linux/linuxDOC.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-960">
+            <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviewPython/orm_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/naive_bayes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/web服务器/html/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/web服务器/asynchronous_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/基础/web服务器/单进程非阻塞模型.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/linerRegartion/housing_regssion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/data2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/data1.txt">
+    <entry file="file://$PROJECT_DIR$/dateandML/linerRegartion/sklearn_回归.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/梯度下降法_逻辑回归.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="30" />
+        <state relative-caret-position="-420">
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python37/Lib/site-packages/sklearn/linear_model/logistic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="1228" column="63" selection-start-line="1228" selection-start-column="63" selection-end-line="1228" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/code/sklearn逻辑.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/Singleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/closePackge.py">
+    <entry file="file://$PROJECT_DIR$/基础/process/test/demo.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/iterableDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/democopy.py">
+    <entry file="file://$PROJECT_DIR$/基础/socket_/socketdow/down/text.tx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/demo.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/importent/orm.py">
+    <entry file="file://$PROJECT_DIR$/基础/装饰器.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/回文数字.py" />
-    <entry file="file://$PROJECT_DIR$/importent/simple_orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/理解元类.MD">
+    <entry file="file://$PROJECT_DIR$/基础/doc/垃圾回收GC.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2054">
-            <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="155">
+            <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/二分查找.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/python推导式.MD">
+    <entry file="file://$PROJECT_DIR$/基础/doc/正则表达式.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+          <first_editor relative-caret-position="203">
+            <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/quick.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/django-polls/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-3/逻辑回归问题.MD">
+    <entry file="file://$PROJECT_DIR$/基础/doc/socket.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="208">
-            <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="669">
+            <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-2/多变量线性回归.MD">
+    <entry file="file://$PROJECT_DIR$/基础/doc/文件读写.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-3432" />
+          <first_editor relative-caret-position="360">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-5/code/BP神经网络_异或.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/基础/doc/线程.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1368">
+            <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-5/BP神经网络.md">
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/线性回归.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="141">
+            <caret line="43" selection-start-line="43" selection-end-line="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/线性代数回顾.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -885,7 +1216,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-4/最近邻规则分类.md">
+    <entry file="file://$PROJECT_DIR$/dateandML/Coursera-Machine-Learning/week-1/线性代数回顾.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -893,176 +1224,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/Coursera-Machine-Learning/week-4/神经网络.md">
+    <entry file="file://$PROJECT_DIR$/dateandML/Coursera-Machine-Learning/week-1/outdoor.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/Coursera-Machine-Learning/week-1/learing.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="168">
+            <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1201333238/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="491" column="4" selection-start-line="491" selection-start-column="4" selection-end-line="491" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_comm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="599" column="24" lean-forward="true" selection-start-line="599" selection-start-column="24" selection-end-line="599" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/变量.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/LinkListDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-590" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/sort3.py" />
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/double_link_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/sort1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/demodoublelinklist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/queue.py" />
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/doc/python中的线性表.MD">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/linked_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/datasets/test_catvnoncat.h5">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/README.md">
+    <entry file="file://$PROJECT_DIR$/dateandML/Coursera-Machine-Learning/week-1/functions.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="168">
+            <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据分析和机器学习/机器学习算法基础/neuralnetwork/Deep-Neural-Network-Python-master/Deep_Neural_Network.py">
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/模型评估.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="96">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/决策树.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="192">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="131">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/Variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/rnndemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work4.py">
+    <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/demominist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        <state relative-caret-position="192">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/fibnq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
+    <entry file="file://$PROJECT_DIR$/dateandML/tensor_note/doc/note_base.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="144" column="4" selection-start-line="144" selection-start-column="4" selection-end-line="144" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/demoClosure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/交叉熵.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dateandML/docs/贝叶斯分类器.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="81">
+            <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reviewPython/demometaclss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/基础/day1/hello/work5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="44" column="11" lean-forward="true" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/demostack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/array_and_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/数据结构和算法/demoqueue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

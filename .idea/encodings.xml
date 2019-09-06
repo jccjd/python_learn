@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dateandML/naive_bayes/ham/6.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dateandML/naive_bayes/spam/17.txt" charset="UTF-8" />
+  </component>
 </project>
