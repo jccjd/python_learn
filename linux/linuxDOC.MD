@@ -64,12 +64,18 @@ ls的通配
     rm -r 递归删除删除文件夹
     
 ### cp
-    
+
+	    
     cp -a 保留文件原有属性
     cp -f 若有重复不提示
     cp -i 若有重复请求用户确认
     cp -r 递归复制，复制文件夹
     cp -v view 
+    
+从服务器拷贝
+	
+	scp -r /etc root@192.168.60.135:/opt # 将本地的etc 拷到 服务器去
+	scp root@192.168.60.133:/home/ixdba/etc.tar.gz /tmp 
 ### 重定向
     
     ls > test.txt ls的输出会存储在test.txt中
@@ -230,3 +236,5 @@ SSH是目前较可靠，专为远程登录会话和其他网络服务提供安�
     
 ### top
 动态查看进程
+
+
