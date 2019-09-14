@@ -1,4 +1,10 @@
 ### 所常用命令
+
+
+#### 查看进程和杀死
+
+	ps -A | grep number
+	kill -9 number
 #### py2和py3和pip2和pip3
 在py2和py3 pip2 and pip3之间自由切换主要是软连接的切换
     
