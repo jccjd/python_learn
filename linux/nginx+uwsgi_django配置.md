@@ -1,55 +1,60 @@
----
-title: 再议三次握手
-date: 2019-9-13
-tags:
-	- 计算机网络
-categories: 
-	- 计算机网络
+在服务器端配置nginx + uwsgi+ django,简单来讲就是将django的项目通过nginx跑起来，在阅读djang
+文档的时候就读到一句非常有意思的话，
+> 我们是框架方面的专家， 但在在服务方面不是
+
+在实际的项目中显然是不能使用django自带的wsgi去跑的， 我们希望的是由nginx来提供服务的.
+
+### 下载uwsgi
+首先三者之间的顺序是 nginx -> （uwsgi ->djangoapp）, uwsgi 和写的django项目相连，在启动项目时，不在是由 manage.py 去启动项目，而是在项目根目录下配置的`uwsgi.ini` 用uwsgi去运行这个文件，来运行项目， 下载 uwsgi,可以直接通过pip安装
     
----
+    pip install uwsgi
+    
+    uwsgi uwsgi.ini # 运行项目
 
-### 再议三次握手
-tcp连接的三次握手和四次挥手，可以说是很多人的惯性认知了，在网上很多人的文章啊博客啊，视屏教程，还有大学老师的授课中也会这样说，tcp的三次握手，这也是面试可以说是必考的题目。然后呢在2019-9-12的夜里突然想到这个问题，这个三次握手到底是怎么回事，怎么会有三次握手呢，我的老师有一句话我记得很清楚，计算机的很多东西都是人类社会的映射，结合实际的生活经验可以理解很多东西，比如数据结构中的队列啊，栈，二叉树，面向对象啊，抽象，继承之类的显然都是，但三次握手是怎么回事，如果以握手来做比为什么是三次，和一个人握三次手这显然是，非常不符合现实逻辑的。那么下面帮大家回顾在一下tcp连接的过程，已经很熟悉的完全可以跳过下面这段
+这时候显然还是不能运行的要配置 `uwsgi.ini`
+    
+    [uwsgi]
+    chdir = /root/mysite //项目根目录-要是绝对路径
+    module = mysite.wsgi:application //指定wsgi模块
 
+    socket = 0.0.0.0:8000 //这里一定要和下面uginx的一致
+    #vhost = true          //多站模式
+    #no-site = true        //多站模式时不设置入口模块和文件
+    #workers = 2           //子进程数
+    #reload-mercy = 10
+    #vacuum = true         //退出、重启时清理文件
+    #max-requests = 1000
+    #limit-as = 512
+    #buffer-size = 30000
+    #pidfile = /var/run/uwsgi9090.pid    //pid文件，用于下脚本启动、停止该进程
+    daemonize = /home/feixue/python/www/for_test/run.log    // 日志文件这个文件一般是没有的要自己新建
+    disable-logging = true   //不记录正常信息，只记录错误信息
+配置完就可以在本地跑了，不出意外的话，一般这里没啥意外，有的话可以看一下报错信息，
+第一次配置的错误是chdir 路径填错了找不到
 
-### tcp的连接过程
+### 安装nginx和配置
+nginx直接apt-get即可安装,主要配置在目录/etc/nginx/sites-available/default,关键配置如下
 
-在tcp要建立连接的时候发送方一般是客户端client，接受方一般是服务端server，下面都以这两个为例，
-- client第一次向server发送的请求报文包含一个SYN=1,和一个随机数 seq=x，
-- 然后server回复给client: SYN=1 和发送的随机数加一 : seq=x+1,
-- 最后client再回复给server:ACK=1, 
+    
+    # include snippets/snakeoil.conf;
 
-那么大致是这个过程，这个过程中的几个关键字这里说一下
-- `SYN(Synchronize Sequence Numbers)`同步序列编号，
-- `ACK（Acknowledge character）`确认字符 
-- `seq`Sequence number(顺序号码) 
+    # root /var/www/html;
 
+    # Add index.php to the list if you are using PHP
+    # index index.html index.htm index.nginx-debian.html;
 
-### 真的是三次握手吗
-可以看到前两次是同步信号synchronize，最后一次才是真正的确认acknowledge, 那么显然了tcp连接其实只握了一次手。
-那么前两个过程究竟是做了什么呢。其实用握手去映射tcp连接的过程，很难去解释，因为tcp的连接过程很难有现实中的映射，首先他是个协议，协议是什么，是人为的规定，就是一个很朴素的想法：要建立连接要事先同步一下，强行解释的话，那么我们看一下在和一个人握手的过程中究竟发生里什么，
+    server_name _;
 
-- 首先你要和一个人握手，那么你肯定知道这个人，而这个人还和你在同一个房子里，（目标ip，都在以太网中）
-- 你望向你要握手的对象，然后那个人也看到了你，两个人目光交汇（同步过程，你望向他，）
-- 然后你直直的走向啦个男人，伸出你的手和他握上了（最后的Ack确认）
+    location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to displaying a 404.
+        # try_files $uri $uri/ =404;
+        include  uwsgi_params;
+                uwsgi_pass  0.0.0.0:8000; # 和uwsgi的是一样的  
+    }
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 
-看看是不是很牵强，所以还是不要随便去拿一些概念去做比，即不准确亦难以描述清楚事实，最重要的是易于误导，和扭曲现实，至少我身边的人包括我在内，初听到这个三次握手都是深以为然，完全没有想到三次握手这件事是多么的诡异。
-
-上面都是我的想法，而且我在书里找到里佐证，在谢希仁-计算机网络-第五版216页下面的一行小字，也就是注解2关于三次握手（three way handshake)的
-
-> 广为流传的译名 “三次”（three-way)并不准确。这里的"三次"是指：A发送一个报文给B， B发回确认，然后A再加以确认，来回共三次。 实际上这三个报文合起来构成连接建立的“一次握手”
-
-所以确实是握手但不是三次
-
-
-
-
-
-
-
-
-
-
+然后就是阿里云的安全组的问题，默认的阿里云是开放公网端口的所以需要，为nginx的80端口添加允许通过网关的安全组，在其中有一栏的端口要 `0.0.0.0：80`，开放之后即使不配置nginx 启动nginx，也可以通过公网ip加端口直接访问.
 
 
 
