@@ -18,14 +18,18 @@
 
 `卸载软件包`
 
-    sudo apt-get autoremove [packagename]   | 自动删除
-    sudo apt-get remove [package]           | 删除
-    sudo apt-get remove package --purge     | 包括配置文件
-    sudo apt-get upgrade [package]          | 更新
-    sudo apt-cache depends package          | 该包依赖那些包
-    sudo apt-cache rdepends package         | 该包被哪些包依赖
-    sudo apt-get clean                      | 清理吴用的包
-    sudo apt-get autoclean                  | 自动清理
+    
+|  命令 | 作用 |
+|---|---|
+| sudo apt-get autoremove [packagename]  | 自动删除 |
+| sudo apt-get remove [package]  | 删除 |
+| sudo apt-get remove package --purge  | 包括配置文件 |
+| sudo apt-cache depends package  | 该包依赖那些包 |
+| sudo apt-cache rdepends package  | 该包被哪些包依赖 |
+| sudo apt-get clean  | 清理吴用的包 |
+| sudo apt-get autoclean  | 自动清理 |
+ 
+    
 `更换pip的源`
 
     mkdir ~/.pip
