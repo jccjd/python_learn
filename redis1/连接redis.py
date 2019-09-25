@@ -33,8 +33,10 @@ name = 'hell0'
 pwd = '10.00'
 
 try:
-    redis = RedisHelper()
-    if redis.get('name') == name:
+    r = RedisHelper()
+    name1 = r.get('uname')
+    print()
+    if r.get('uname') == name:
         print('ok')
     else:
         db = MySQLApp.getInstance()
@@ -47,7 +49,7 @@ try:
         if upwd == 0:
             print('用户名错误')
         elif str(al[0][1]) == pwd:
-            redis.set('uname', name)
+            r.set('uname', name)
             print('登陆成功')
         else:
             print('pwd error')
