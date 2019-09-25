@@ -1,7 +1,8 @@
 # python_learn
 ![image](https://img.shields.io/badge/python-learn-9cf)
-
-![GitHub](https://img.shields.io/github/license/jccjd/python_learn?color=dd&label=dd&logo=dd&style=for-the-badge)
+![image](https://img.shields.io/badge/linux-skill-ff69b4)
+![image](https://img.shields.io/badge/django-hello-blue
+)
 
 **这里是对学习python的一些理解整理的文档**
 
