@@ -28,3 +28,6 @@ liunx下的位置： `/usr/local/lib/python3.6/dist-packages/django/db/backends/
 2.解决： 依然改源码
     
     query = query.decode(errors='replace') 改为 query = query.encode(errors='replace')
+    
+    
+    
