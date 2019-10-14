@@ -66,3 +66,18 @@
     cd ~
     rm -rf .navicat64
     ./start_navicat
+    
+#### 默认字符集修改
+
+5.7的配置文件在/etc/mysql/mysql.conf.d/mysqld.cnf下，不要瞎找了    
+        
+    [client] 
+    default-character-set=utf8
+    [mysqld]
+    default-storage-engine=INNODB
+    character-set-server=utf8 
+    collation-server=utf8_general_ci
+
+    service mysql restart
+
+    show variables like "%char%";

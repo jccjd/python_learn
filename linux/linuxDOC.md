@@ -82,10 +82,13 @@ ls的通配
     cp -r 递归复制，复制文件夹
     cp -v view 
     
-从服务器拷贝
+### scp
+
+    从服务器拷贝
 	
 	scp -r /etc root@192.168.60.135:/opt # 将本地的etc 拷到 服务器去
 	scp root@192.168.60.133:/home/ixdba/etc.tar.gz /tmp 
+
 ### 重定向
     
     ls > test.txt ls的输出会存储在test.txt中
