@@ -136,3 +136,55 @@ local_ip是本机的内网ip,而非`127.0.0.1`,如果要镜像外网访问这里
     >>> from fdfs_client.client import *
     >>> client = Fdfs_client('/etc/fdfs/client.conf')
     >>> ret = client.upload_by_filename('绝对路径')
+
+
+### fastdfs交付nginx代理
+
+`Fastdfs` 是擅长做存储的,跟网络打交道还是需要`nginx`, 所以需要将`docker`中的 `Fastdfs`去和`nginx`结合
+
+*更改storage的端口*
+
+进入已经启动的`storage`将端口修改, 默认的端口是8888,最好是不改,
+
+    docker exec -it storage bash
+    vi /etc/fdfs/storage.conf ---> http.server_port=8888
+
+*配置nginx*
+在`nginx`的配置中修改 `http`中的`server`
+
+    cd /etc/nginx
+    vi nginx.config
+
+    http{
+
+    ......
+
+        server{
+            listen	8874; # 8888端口是nginx的启动测试端口
+            server_name	xx.xx.xx.xx; # 内网ip或外网ip
+            location	/group1/M00{ # storage data 的存储位置
+                alias	/var/fdfs/storage/data;
+            }
+        error_page	500 502 503 504 /50x.html;
+        location =	/50x.html{
+            root html;
+            }
+        }
+
+    ......
+
+    }
+
+*测试是否成功*
+进入`storage`上传一个测试文本
+
+    >>> docker exec -it storage bash 	
+
+    >>> echo hello_world>a.txt 				
+
+
+    >>> /usr/bin/fdfs_upload_file /etc/fdfs/client.conf a.txt  
+    /group1/M00/00/02/rBDRdF2oI0qAN9jWAAAABncc3SA745.txt
+
+    >>> curl http://xx.xx.xx.xx:8874/group1/M00/00/02/rBDRdF2oI0qAN9jWAAAABncc3SA745.txt
+    hello_world
