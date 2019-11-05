@@ -13,7 +13,7 @@ def produce():
     n = 0
     while n < 5:
         n = n + 1
-        print('produce ---> ',n)
+        print('produce ---> ', n)
         r = c.send(n)
         print(r)
 

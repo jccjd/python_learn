@@ -12,7 +12,7 @@ def proudce():
     n = 0
     while n < 5:
         n = n + 1
-        print(f'produce-->第{n}个汉堡')
+        print('produce-->第{n}个汉堡')
         resp = c.send(n)
         print(resp)
 c = consumer()

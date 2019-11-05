@@ -11,7 +11,7 @@ def my_downLoad(url):
     print('GET: %s'%url)
     resp = urllib.request.urlopen(url)
     data = resp.read()
-    print(f'{len(data)} bytes received from {url}')
+    print('{len(data)} bytes received from {url}')
 
 gevent.joinall([
     gevent.spawn(my_downLoad,'http://www.baidu.com/'),

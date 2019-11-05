@@ -12,7 +12,7 @@ def my_downLoad(filename, url):
     with open(filename,'wb') as f:
         f.write(data)
     print(filename)
-    print(f'{len(data)/(1024*1024)} m received from {url}')
+    print('{len(data)/(1024*1024)} m received from {url}')
 
 gevent.joinall([
     gevent.spawn(my_downLoad,'1.jpg','https://i0.hdslb.com/bfs/archive/baf5726bcb6ddf7cdffe99ca75a39192a3e8a514.png'),

@@ -15,7 +15,7 @@ def my_download(url):
     print(url)
     resp = urllib.request.urlopen(url)
     data = resp.read()
-    with open(f"image/{random.random()}.jpg","wb") as f:
+    with open("image/{random.random()}.jpg","wb") as f:
         f.write(data)
 
 

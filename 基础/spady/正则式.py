@@ -57,6 +57,6 @@ results = re.findall(pattern, content)
 for result in results:
     top, url, name = result
     with open('topmove.txt','a+') as f:
-        f.write(f"{top} {url} {(re.sub('n', '', name)).strip()} \n")
+        f.write("{top} {url} {(re.sub('n', '', name)).strip()} \n")
 
     # print(top, url, re.sub('\n', " ", name))

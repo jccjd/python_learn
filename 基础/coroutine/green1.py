@@ -10,6 +10,6 @@ def coroutine_work(coroutine_name):
         time.sleep(random.random())
 
 gevent.joinall([
-    gevent.spawn(coroutine_work,'work1'),
-    gevent.spawn(coroutine_work,'work2')
+    gevent.spawn(coroutine_work, 'work1'),
+    gevent.spawn(coroutine_work, 'work2')
 ])

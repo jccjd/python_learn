@@ -1,9 +1,19 @@
-#coding=utf-8
-
-
 '''
 装饰任意参数的函数
 '''
+
+
+def deco(func):
+    def warpper(*args, **kwargs):
+        print('start')
+        func(*args, **kwargs)
+        print('end')
+    return warpper
+
+@deco
+def test():
+    print('hell')
+test()
 
 def deco(func):
     def warpper(*args, **kwargs):
@@ -58,15 +68,6 @@ def myfun():
     return "end"
 myfun()
 print(myfun.__name__)
-
-
-
-
-
-
-
-
-
 
 
 

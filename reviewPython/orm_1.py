@@ -1,59 +1,65 @@
-class Filed(object):
-    def __init__(self, name, column):
+class Singleton(object):
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, '_instance'):
+            cls._instance = super(Singleton, cls).__new__(cls, *args, **kwargs)
+        return cls._instance
+
+
+class Field(object):
+    def __init__(self, name, column_type):
         self.name = name
-        self.column = column
+        self.column_type = column_type
 
-class StringFiled(Filed):
-    def __init__(self, name):
-        super(StringFiled, self).__init__(name, 'varchar(100)')
+    def __str__(self):
+        return '<%s %s>' % self.__class__.__name__, self.name
 
-class IntegerFiled(Filed):
+
+class StringField(Field):
     def __init__(self, name):
-        super(IntegerFiled, self).__init__(name, 'bigint')
+        super(StringField, self).__init__(name, 'varchar(100)')
+
+
+class IntegerField(Field):
+    def __init__(self, name):
+        super(IntegerField, self).__init__(name, 'bigint')
+
 
 class ModelMetaClass(type):
-    def __new__(mcs, name, base, dic):
+    def __new__(mcs, name, base, dct):
         if name == 'Model':
-            super(ModelMetaClass, mcs).__new__(mcs, name, base, dic)
-
-        mapping = dict()
-        for k, v in dic.items():
-            if isinstance(v, Filed):
-                print(f'find mapping{k,v.column}')
-                mapping[k] = v
+            super(ModelMetaClass, mcs).__new__(mcs, name, base, dct)
+        attr = ((key, value) for key, value in dct.items() if isinstance(value, Field))
+        mapping = dict((key, value) for key, value in attr)
 
         for k in mapping.keys():
-            dic.pop(k)
+            dct.pop(k)
 
-        dic['__table__'] = name.lower()
-        dic['__mapping__'] = mapping
-        return super(ModelMetaClass, mcs).__new__(mcs, name, base, dic)
-class Model(dict,metaclass=ModelMetaClass):
+        dct['__table__'] = name.lower()
+        dct['__mapping__'] = mapping
+        return super(ModelMetaClass, mcs).__new__(mcs, name, base, dct)
+
+
+class Model(dict, metaclass=ModelMetaClass):
 
     def __init__(self, **kwargs):
         super(Model, self).__init__(**kwargs)
 
-    def __getattr__(self, key):
-        try:
-            return self[key]
-        except:
-            Exception('not found the %s'%key)
+    def __getattr__(self, item):
+        return self[item]
 
     def save(self):
         field = []
         args = []
         for k, v in self.__mapping__.items():
-            field.append(k)
-            args.append(getattr(self, k,  None))
+            field.append(v.name)
+            args.append(getattr(self, k))
+        print(field, args)
 
-        args = [str(i) for i in args]
-        sql = 'insert into %s (%s) values (%s)' % (self.__table__, ','.join(field), ','.join(args))
-        print(sql)
 
 class User(Model):
-    id = IntegerFiled('id')
-    name = StringFiled('name')
-    age = IntegerFiled('age')
+    id = IntegerField('id')
+    name = StringField('name')
 
-u = User(id=1, name='li', age=10)
+
+u = User(id=1, name='ll')
 u.save()

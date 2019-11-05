@@ -58,7 +58,7 @@ class Model(dict,metaclass=ModelMetaclass):
         print('SQL: %s' % sql)
         print('ARGS: %s' % str(args))
 
-#最后，我们使用定义好的ORM接口，使用起来非常的简单。
+#最后，我们使用定义好的ORM接口，使用起来非常的简单。https://jccjd.top/images/favicon.ico.png
 class User(Model):
     # 定义类的属性到列的映射：
     id = IntegerField('id')
@@ -67,9 +67,9 @@ class User(Model):
     password = StringField('password')
 
 # 创建一个实例：
-u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')
-# 保存到数据库：
-u.save()
+# u = User(id=12345, name='Michael', email='test@orm.org', password='my-pwd')
+# # 保存到数据库：
+# u.save()
 
 #输出
 # Found mapping: email==><StringField:email>

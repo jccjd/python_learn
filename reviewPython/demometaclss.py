@@ -57,6 +57,6 @@ class Singleton(type):
             self._instance = super(Singleton, self).__call__(*args, **kwargs)
         return self._instance
 
-u = User()
-u.save()
-
+if __name__ == '__main__':
+    u = User()
+    u.save()

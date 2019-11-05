@@ -63,7 +63,7 @@ for i in range(training_iterations):
             X: batch_input,
             Y: batch_layers
         })
-        print(f"{i} step: ", train_accuracy)
+        print("%s step: " % train_accuracy)
 
 def res_Visual(n):
     final_opt_a = tf.argmax(final_opt, 1).eval(

@@ -34,7 +34,7 @@ class MySQL(object):
         return self.cursor.fetchone()
 
     def getRowCount(self):
-        u'获取结果行数'
+        u"""获取结果行数"""
         return self.cursor.rowcount
 
 
@@ -49,7 +49,7 @@ class MySQL(object):
              raise pymysql.err
 
     def update(self, sql):
-        u'执行 UPDATE 及 DELETE 语句'
+        u"""执行 UPDATE 及 DELETE 语句"""
         try:
             self.cursor.execute("SET NAMES utf8")
             result = self.cursor.execute(sql)
@@ -63,12 +63,14 @@ class MySQL(object):
         self.conn.close()
 
     def __del__(self):
-        u'释放资源（系统GC自动调用）'
+        u"""释放资源（系统GC自动调用）"""
         try:
             self.cursor.close()
             self.conn.close()
         except:
             pass
+
+
 
 if __name__ == '__main__':
 
