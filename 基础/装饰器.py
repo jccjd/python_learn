@@ -2,25 +2,12 @@
 装饰任意参数的函数
 '''
 
-
 def deco(func):
-    def warpper(*args, **kwargs):
+    def wrapper(*args, **kwargs):
         print('start')
         func(*args, **kwargs)
         print('end')
-    return warpper
-
-@deco
-def test():
-    print('hell')
-test()
-
-def deco(func):
-    def warpper(*args, **kwargs):
-        print('start')
-        func(*args, **kwargs)
-        print('end')
-    return warpper
+    return wrapper
 
 @deco
 def myfun1(param1):

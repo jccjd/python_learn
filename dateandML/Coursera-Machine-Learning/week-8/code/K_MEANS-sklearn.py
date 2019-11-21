@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 
 #载入数据
-data = np.genfromtxt('data1.txt',delimiter=' ')
+data = np.genfromtxt('data1.txt', delimiter=' ')
 
 # #设置k值
 k = 4

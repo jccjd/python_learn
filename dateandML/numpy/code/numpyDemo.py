@@ -33,7 +33,7 @@ import pandas as pd
 # print(data)
 # print(data[list('竹菊')])
 # # pandas 对数据的保存
-# data.to_csv('data.csv', index = False, header = True)
+# data.to_csv('data.excel', index = False, header = True)
 
 # numpy 中的矩阵和向量
 a = np.array([[1,2,3,4],[1,2,3,4]])

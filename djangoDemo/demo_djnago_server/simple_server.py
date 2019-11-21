@@ -92,7 +92,7 @@ class HttpResponse(object):
         content = bytes(value.encode(self._charset))
         self._container = [content]
 
-    def __iter__(self):  # 可迭代对象
+    def __iter__(self):
         return iter(self._container)
 
 
@@ -105,7 +105,7 @@ def get_response(request):
     print("path = %s" % request.path)
     print("method = %s" % request.method)
     res = HttpResponse("hello world")
-    res.status_code = 400
+    res.status_code = 200
     res._headers["hahahah"] = "xxxxxx"
     return res
 

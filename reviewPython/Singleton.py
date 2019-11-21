@@ -1,6 +1,6 @@
 #   元类实现Singleton
 class Singleton(type):
-    def __init__(cls,name,base,dict):
+    def __init__(cls, name, base, dict):
         super(Singleton,cls).__init__(name, base, dict)
         cls._instance = None
     def __call__(cls, *args, **kwargs):

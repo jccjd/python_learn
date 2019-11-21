@@ -1,4 +1,4 @@
-from  PIL import Image
+from PIL import Image
 import numpy as np
 if __name__ == '__main__':
 
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     chars = "MNHQOC?&>!:-;."
     N = len(chars)
     step = 256 // N
-    print('N:',N)
+    print('N:', N)
     result = ''
     for i in range(height):
         for j in range(width):

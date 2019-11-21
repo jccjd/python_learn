@@ -1,7 +1,8 @@
 import tensorflow as tf
 import numpy as np
-from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets("./MNIST_data/", one_hot=True)
+# from tensorflow.examples.tutorials.mnist import input_data
+mnist = np.random.random(100)
+print(mnist)
 import matplotlib.pyplot as plt
 # 初始化
 num_classes = 10
@@ -65,20 +66,20 @@ for i in range(training_iterations):
         })
         print("%s step: " % train_accuracy)
 
-def res_Visual(n):
-    final_opt_a = tf.argmax(final_opt, 1).eval(
-        session=sess, feed_dict={
-            X:mnist.test.images,
-            Y: mnist.test.labels
-        }
-    )
-    fig, ax = plt.subplots(nrows=int(n / 5), ncols=5)
-    ax = ax.flatten()
-    print(format(n))
-    for i in range(n):
-        print(final_opt_a[i], end=',')
-        if int((i + 1) % 5) == 0:
-            print('\t')
-
-        img = mnist.test.images[i].reshap((28,28))
-        ax[i].imshow(img, cmap='Greys', interpolation='nearest')
+# def res_Visual(n):
+#     final_opt_a = tf.argmax(final_opt, 1).eval(
+#         session=sess, feed_dict={
+#             X:mnist.test.images,
+#             Y: mnist.test.labels
+#         }
+#     )
+#     fig, ax = plt.subplots(nrows=int(n / 5), ncols=5)
+#     ax = ax.flatten()
+#     print(format(n))
+#     for i in range(n):
+#         print(final_opt_a[i], end=',')
+#         if int((i + 1) % 5) == 0:
+#             print('\t')
+#
+#         img = mnist.test.images[i].reshap((28,28))
+#         ax[i].imshow(img, cmap='Greys', interpolation='nearest')

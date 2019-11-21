@@ -7,7 +7,7 @@ class MySQL(object):
         self._instance = pymysql
         try:
             self.conn = pymysql.connect(
-                host='localhost',
+                host='',
                 port=3306,
                 database='demo',
                 user='root',
@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
     # 数据库连接参数
     dbconfig = {
-        'host': 'localhost',
+        'host': '106.53.41.243',
         'port': 3306,
         'user': 'root',
         'passwd': 'root',
@@ -86,7 +86,7 @@ if __name__ == '__main__':
     db = MySQL(dbconfig)
 
     # 操作数据库
-    sql = "SELECT * FROM goods"
+    sql = "select * from user"
     db.query(sql)
 
     # 获取结果列表

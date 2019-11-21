@@ -1,3 +1,42 @@
+import tensorflow as tf
+import pandas as pd
+import numpy as np
+
+# 将数据转换成两个数组, 训练数据和
+def get_data():
+    '''
+    训练数据: X
+    和标签 : Y
+    :return: X, Y
+    '''
+
+    data = pd.read_excel('data.xlsx')
+    type_map = {
+        'T恤': 1,
+        '衬衫': 2,
+        '卫衣/绒衫': 3,
+        '连衣裙': 4,
+        '半身裙': 5,
+    }
+    # 将类别替换成数据
+    data['类目'] = data['类目'].map(type_map)
+
+    x = data.iloc[:, :-1]
+    Y = data.iloc[:, -1]
+
+    X = np.array(x)
+    Y = np.array(Y)
+
+    return X, Y
+
+# 均值归一化
+def normalization(X):
+    xmin, xmax = X.min(), X.max()
+    X = (X - xmin) / (xmax - xmin)
+    return X
+
+X, Y = get_data()
+
 import math
 import random
 import pandas as pd
@@ -61,8 +100,8 @@ class NN:
                 self.wo[j][k] = rand(-2, 2)  ##生成[-2,2]之间的随机数
 
     def update(self, inputs):
-        if len(inputs) != self.ni - 1:
-            raise ValueError('与输入层节点数不符！')
+        # if len(inputs) != self.ni - 1:
+        #     raise ValueError('与输入层节点数不符！')
 
         # 激活输入层
         for i in range(self.ni - 1):
@@ -152,7 +191,7 @@ class NN:
         for i in range(iterations):
             error = 0.0
             for p in patterns:
-                inputs = p[0]
+                inputs = p
                 targets = p[1]
                 self.update(inputs)
                 error = error + self.backPropagate(targets, lr)
@@ -161,42 +200,32 @@ class NN:
                 print('error: %-.9f' % error)
 
 
+def normalization(X):
+    xmin, xmax = X.min(), X.max()
+    X = (X - xmin) / (xmax - xmin)
+    return X
+
+
 def iris():
     data = []
     # 读取数据
-    raw = pd.read_csv('iris.csv')
-    raw_data = raw.values
-    raw_feature = raw_data[0:, 0:4]
-
-    # 将最后一列的鸢尾花类别转成one-hot编码形式
-    for i in range(len(raw_feature)):
-        ele = []
-        ele.append(list(raw_feature[i]))
-        if raw_data[i][4] == 'Iris-setosa':
-            ele.append([1, 0, 0])
-        elif raw_data[i][4] == 'Iris-versicolor':
-            ele.append([0, 1, 0])
-        else:
-            ele.append([0, 0, 1])
-        data.append(ele)
+    data, y = get_data()
+    print(len(data))
+    data = normalization(data)
     # 随机打乱数据
     random.shuffle(data)
     # 选取打乱后的前100个作为训练数据
-    training = data[0:100]
+    training = data[0:200]
     # 选取打乱后的后50个作为测试数据
-    test = data[101:]
+    test = data[201:]
     # 输入层4个节点，隐藏层7个，输出层3个(100,010,001三类)
-    nn = NN(4, 7, 3)
+    nn = NN(5, 7, 2)
     # 训练网络，轮10000次
     nn.train(training, iterations=10000)
     # 测试数据
     nn.test(test)
 
 
-''' 
-if __name__ == '__main__':  的作用
-   当这个.py文件被直接运行时，if __name__ == '__main__'之下的代码块将被运行
-   当这个.py文件以模块形式被导入时，if __name__ == '__main__'之下的代码块不被运行
-'''
+
 if __name__ == '__main__':
     iris()

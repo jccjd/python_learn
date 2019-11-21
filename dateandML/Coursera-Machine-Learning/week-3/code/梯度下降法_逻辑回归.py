@@ -6,7 +6,7 @@ from sklearn import preprocessing
 # 数据是否需要标准化
 scale = True
 # 载入数据
-data = np.genfromtxt('data1.txt', delimiter=',')
+data = np.genfromtxt('data1.text', delimiter=',')
 x_data = data[:, :-1]
 y_data = data[:, -1]
 def plot():
