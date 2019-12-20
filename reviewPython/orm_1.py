@@ -61,5 +61,3 @@ class User(Model):
     name = StringField('name')
 
 
-u = User(id=1, name='ll')
-u.save()
